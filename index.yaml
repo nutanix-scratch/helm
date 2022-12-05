@@ -4,37 +4,54 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2022-12-05T18:54:20.180880078Z"
+    created: "2022-12-05T19:04:39.286372771Z"
     dependencies:
     - condition: security-dashboard.enabled
       name: security-dashboard
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 0.1.14
-    digest: c74e6f4730b2329e93c2ce13bc5cd253a30c97a267d6e43ca17cd6591a1573f7
+    digest: 59b8facebb7d450dad29e84ee4d9814b5a2557bcfb177c4bb1b4cca26fe4a3f0
     keywords:
     - security-dashboard
     name: pc-app-aws
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-2/pc-app-aws-2.9.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-3/pc-app-aws-2.9.1.tgz
     version: 2.9.1
   pc-app-azure:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2022-12-05T18:54:20.182017522Z"
+    created: "2022-12-05T19:04:39.28785511Z"
     dependencies:
     - condition: security-dashboard.enabled
       name: security-dashboard
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 0.1.14
-    digest: 97671fbc42c4ac87793b0291ff7600cb60f2dabe78533e1bc1e903651f0a69dc
+    digest: 3ba96dfccde8498021683a5cbbca15e7ec78595801a12b5f7e20c5fd7cea3603
     keywords:
     - security-dashboard
     name: pc-app-azure
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-2/pc-app-azure-2.9.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-3/pc-app-azure-2.9.1.tgz
     version: 2.9.1
   pc-app-onprem:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2022-12-05T19:04:39.288918304Z"
+    dependencies:
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.9.5
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 98e3991e8ef93daa4d431eb0b3f9becf7505009743611041399f96d9fd94d1c4
+    keywords:
+    - security-dashboard
+    name: pc-app-onprem
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-3/pc-app-onprem-2.9.7.tgz
+    version: 2.9.7
   - annotations:
       appType: Application
     apiVersion: v2
@@ -69,4 +86,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2022-12-05T18:54:20.177476733Z"
+generated: "2022-12-05T19:04:39.285104044Z"
