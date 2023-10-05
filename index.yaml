@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  k8s-agent:
+  - apiVersion: v2
+    appVersion: 0.1.112
+    created: "2023-10-05T18:56:04.035744099Z"
+    description: A Helm chart for Kubernetes
+    digest: 59d8d2a4fe69603cd353bc7e57ba8aa611a10fb71b6affd8c5fd428b45447f1d
+    name: k8s-agent
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ndk-k8s-agent-rc-1/k8s-agent-1.0.363.tgz
+    version: 1.0.363
   pc-app-aws:
   - annotations:
       appType: Application
@@ -309,4 +320,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2023-09-08T14:39:07.483123145Z"
+generated: "2023-10-05T18:56:04.034979033Z"
