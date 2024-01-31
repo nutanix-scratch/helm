@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  helm-test-custom:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2024-01-31T02:01:45.444301989Z"
+    description: A Helm chart for Kubernetes
+    digest: b866721f0489413a61ca362450cb77c44de96a43ffedbf7ec7df8492531a01d9
+    name: helm-test-custom
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/hps-test-3/helm-test-custom-1.1.0.tgz
+    version: 1.1.0
   k8s-agent:
   - apiVersion: v2
     appVersion: 1.0.397
@@ -495,4 +506,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2023-12-21T22:59:40.965224602Z"
+generated: "2024-01-31T02:01:45.443528281Z"
