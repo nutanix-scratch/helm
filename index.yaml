@@ -44,6 +44,17 @@ entries:
     version: 1.0.363
   nutanix-k8s-agent:
   - apiVersion: v2
+    appVersion: 1.0.643
+    created: "2024-02-05T23:47:37.266646996Z"
+    description: A Helm chart for onboarding a Kubernetes cluster created on Nutanix
+      Infrastructure onto Prism Central.
+    digest: 482dac8e5f1d93a2419f6129f3bf50d92ac276634495ac5e223e1fa71ddc1004
+    name: nutanix-k8s-agent
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ndk-k8s-agent-rc-9/nutanix-k8s-agent-1.0.643.tgz
+    version: 1.0.643
+  - apiVersion: v2
     appVersion: 1.0.608
     created: "2024-01-31T18:53:45.579680708Z"
     description: A Helm chart for onboarding a Kubernetes cluster created on Nutanix
@@ -599,4 +610,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/PC-2024.128-charts/pc-app-onprem-1.0.84.tgz
     version: 1.0.84
-generated: "2024-02-01T20:21:17.404166853Z"
+generated: "2024-02-05T23:47:37.262486753Z"
