@@ -58,9 +58,9 @@ entries:
         - url: https://artifacthub.io/packages/helm/nutanix/nutanix-csi-snapshot
     apiVersion: v1
     appVersion: 3.0.0-beta.1912
-    created: "2024-03-18T19:24:17.272311409Z"
+    created: "2024-03-18T19:43:54.697339028Z"
     description: Nutanix Container Storage Interface (CSI) Driver
-    digest: d2054a0f90a9bcaf2208c6b8931bb89d3d38f86260baf73abba905513ed4574e
+    digest: 2b45897c44e3677da992c1c042e778b849d5c94d60578c8b13b22948a61ddb53
     home: https://github.com/nutanix/helm
     icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
     keywords:
@@ -79,7 +79,7 @@ entries:
       name: nutanix-cloud-native-bot
     name: nutanix-csi-storage
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-csi-storage-3.0.0-beta.1912-rc-1/nutanix-csi-storage-3.0.0-beta.1912.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-csi-storage-rc-1/nutanix-csi-storage-3.0.0-beta.1912.tgz
     version: 3.0.0-beta.1912
   nutanix-k8s-agent:
   - apiVersion: v2
@@ -682,4 +682,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/PC-2024.128-charts/pc-app-onprem-1.0.84.tgz
     version: 1.0.84
-generated: "2024-03-18T19:24:17.27022793Z"
+generated: "2024-03-18T19:43:54.695289771Z"
