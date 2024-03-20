@@ -207,20 +207,20 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2023-12-15T21:25:18.425977732Z"
+    created: "2024-03-20T23:41:53.020864841Z"
     dependencies:
     - condition: clustermgmt-nc2.enabled
       name: clustermgmt-nc2
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 3.4.0
     description: An Umbrella Helm chart representing the PC Platform
-    digest: d96dcef120de43bc62c27e65ad528ceed8ef08b65f4a18a1debe40bec521518a
+    digest: 3bf5ee150e7c6bf9534502effef3f3d12c2b87c88d428a87e6cc32adb02e5449
     keywords:
     - security-dashboard
     - clustermgmt-nc2
     name: pc-app-aws
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/pc.2023.4-rc-3/pc-app-aws-3.4.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.2023.4.0.2-rc-1/pc-app-aws-3.4.1.tgz
     version: 3.4.1
   - annotations:
       appType: Application
@@ -297,20 +297,20 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2023-12-15T21:25:18.426900552Z"
+    created: "2024-03-20T23:41:53.021693595Z"
     dependencies:
     - condition: msp-prometheus-collector.enabled
       name: msp-prometheus-collector
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 3.3.0
     description: An Umbrella Helm chart representing the PC Platform
-    digest: 8ee69e75adcd0f8c5e5db792c1b260b2d7efdddb047670f6493761505e63ff0e
+    digest: 2715315d145a8ead66f00a3b159d3e16835c02a4d18610c8f33e71c13d4da933
     keywords:
     - security-dashboard
     - msp-prometheus-collector
     name: pc-app-azure
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/pc.2023.4-rc-3/pc-app-azure-3.4.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.2023.4.0.2-rc-1/pc-app-azure-3.4.1.tgz
     version: 3.4.1
   - annotations:
       appType: Application
@@ -395,6 +395,23 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2024.1-rc-1/pc-app-onprem-4.1.5.tgz
     version: 4.1.5
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2024-03-20T23:41:53.02273816Z"
+    dependencies:
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 3.4.8
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 721b22fb647b01795d3a845e5305cf2ecebe80af93a855afe55072bcbe2a6847
+    keywords:
+    - security-dashboard
+    name: pc-app-onprem
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.2023.4.0.2-rc-1/pc-app-onprem-3.4.9.tgz
+    version: 3.4.9
   - annotations:
       appType: Application
     apiVersion: v2
@@ -666,4 +683,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2024-03-19T21:53:05.081545592Z"
+generated: "2024-03-20T23:41:53.019583135Z"
