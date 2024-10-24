@@ -336,6 +336,28 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2024-10-24T20:51:30.53755887Z"
+    dependencies:
+    - condition: clustermgmt-nc2.enabled
+      name: clustermgmt-nc2
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.0
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.3
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 1d5ffc5dad450b79a79e17ece24d8fec2b7211bed6c53867f0118b408c3cadb3
+    keywords:
+    - security-dashboard
+    - batch-service
+    name: pc-app-aws
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/charts-fraser-2024.1-images535/pc-app-aws-4.3.2.tgz
+    version: 4.3.2
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2024-08-13T20:50:42.895579868Z"
     dependencies:
     - condition: clustermgmt-nc2.enabled
@@ -480,6 +502,28 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2024-10-24T20:51:30.539345966Z"
+    dependencies:
+    - condition: msp-prometheus-collector.enabled
+      name: msp-prometheus-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.1.0
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.3
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 380ca7d5c7875b6e74de5e68c0f901e0e05688283ee9e621ec8151d3cdee99ff
+    keywords:
+    - msp-prometheus-collector
+    - batch-service
+    name: pc-app-azure
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/charts-fraser-2024.1-images535/pc-app-azure-4.3.2.tgz
+    version: 4.3.2
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2024-08-13T20:50:42.896559267Z"
     dependencies:
     - condition: batch-service.enabled
@@ -607,6 +651,44 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-4/pc-app-azure-2.9.1.tgz
     version: 2.9.1
   pc-app-onprem:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2024-10-24T20:51:30.544180114Z"
+    dependencies:
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.11
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.12
+    - condition: licensing-app.enabled
+      name: licensing-app
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.3
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.4
+    - condition: mitra-service.enabled
+      name: mitra-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.4
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 09bc2f3dcbbb423dbc38bfa614189eca407065f0d674c41caac42213d557be33
+    keywords:
+    - security-dashboard
+    - objects-lite
+    - marina
+    - licensing-app
+    - batch-service
+    - mitra-service
+    name: pc-app-onprem
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/charts-fraser-2024.1-images535/pc-app-onprem-4.3.29.tgz
+    version: 4.3.29
   - annotations:
       appType: Application
     apiVersion: v2
@@ -1057,4 +1139,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2024-08-13T20:50:42.893667817Z"
+generated: "2024-10-24T20:51:30.535606223Z"
