@@ -82,6 +82,44 @@ entries:
   nutanix-csi-storage:
   - annotations:
       artifacthub.io/changes: |
+        - Update Nutanix CSI Driver to 3.1.0
+      artifacthub.io/containsSecurityUpdates: "true"
+      artifacthub.io/displayName: Nutanix CSI Storage
+      artifacthub.io/links: |
+        - name: Nutanix CSI Driver documentation
+          url: https://portal.nutanix.com/page/documents/details?targetId=CSI-Volume-Driver-v3_1:CSI-Volume-Driver-v3_1
+      artifacthub.io/maintainers: |
+        - name: Nutanix Cloud Native Team
+          email: cloudnative@nutanix.com
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/nutanix/nutanix-csi-snapshot
+    apiVersion: v1
+    appVersion: 3.1.0
+    created: "2024-10-27T10:46:06.302414071Z"
+    description: Nutanix Container Storage Interface (CSI) Driver
+    digest: 754a5ead600debd768f4fd91afea546b499fce5fc46b430bfdfc56a9ed54c238
+    home: https://github.com/nutanix/helm
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Nutanix
+    - Storage
+    - Volumes
+    - Files
+    - StorageClass
+    - RedHat
+    - CentOS
+    - Ubuntu
+    - CSI
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: nutanix-csi-storage
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-csi-storage-3.1.0/nutanix-csi-storage-3.1.0.tgz
+    version: 3.1.0
+  - annotations:
+      artifacthub.io/changes: |
         - Update Nutanix CSI Driver to 3.0.0
       artifacthub.io/containsSecurityUpdates: "true"
       artifacthub.io/displayName: Nutanix CSI Storage
@@ -1139,4 +1177,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2024-10-26T23:25:23.530257128Z"
+generated: "2024-10-27T10:46:06.293444425Z"
