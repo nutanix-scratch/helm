@@ -403,6 +403,28 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2024-11-07T21:37:08.755149625Z"
+    dependencies:
+    - condition: clustermgmt-nc2.enabled
+      name: clustermgmt-nc2
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.1
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.7
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 939e29a0e271633956d61e0a777f278760c7dfd6460b982da0c65a3d8838f81c
+    keywords:
+    - security-dashboard
+    - batch-service
+    name: pc-app-aws
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.2024.3-rc-2/pc-app-aws-4.3.4.tgz
+    version: 4.3.4
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2024-10-26T23:25:23.532034599Z"
     dependencies:
     - condition: clustermgmt-nc2.enabled
@@ -566,6 +588,28 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-4/pc-app-aws-2.9.1.tgz
     version: 2.9.1
   pc-app-azure:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2024-11-07T21:37:08.756714356Z"
+    dependencies:
+    - condition: msp-prometheus-collector.enabled
+      name: msp-prometheus-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.1.0
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 4.3.7
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 45333f1da77d854767df94b4300cf3eecde701a34a988b89a7f7cb98b22e6327
+    keywords:
+    - msp-prometheus-collector
+    - batch-service
+    name: pc-app-azure
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.2024.3-rc-2/pc-app-azure-4.3.4.tgz
+    version: 4.3.4
   - annotations:
       appType: Application
     apiVersion: v2
@@ -1309,4 +1353,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2024-11-07T17:14:28.389931479Z"
+generated: "2024-11-07T21:37:08.753259231Z"
