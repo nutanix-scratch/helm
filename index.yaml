@@ -90,6 +90,35 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ndk-k8s-agent-rc-1/k8s-agent-1.0.363.tgz
     version: 1.0.363
+  ncs-app-aws:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    created: "2025-02-25T03:59:41.83749336Z"
+    dependencies:
+    - name: ncs-cluster-operator
+      repository: oci://353502843997.dkr.ecr.us-west-2.amazonaws.com
+      version: 0.0.2038
+    - name: ncs-nxctl
+      repository: oci://353502843997.dkr.ecr.us-west-2.amazonaws.com
+      version: 0.0.1211
+    - name: ncs-metadata-exporter
+      repository: oci://353502843997.dkr.ecr.us-west-2.amazonaws.com
+      version: 0.0.90
+    - name: ncs-collector-chart
+      repository: oci://353502843997.dkr.ecr.us-west-2.amazonaws.com
+      version: 0.0.61
+    description: An Umbrella Helm Chart representing the NCS app
+    digest: 48b1f7adabade59e2626506887c4d78930efddebc65116aaa0f3544319f6246e
+    keywords:
+    - ncs-cluster-operator
+    - ncs-nxctl
+    - ncs-metadata-exporter
+    - ncs-collector-chart
+    name: ncs-app-aws
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-release-1/ncs-app-aws-999.999.5889.tgz
+    version: 999.999.5889
   ncs-cluster-operator:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -127,6 +156,17 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-helm-release-1/ncs-installer-agent-0.0.2070-stg.tgz
     version: 0.0.2070-stg
+  ncs-manifest:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2025-02-25T03:59:41.849535484Z"
+    description: A Helm chart for ncs-manifest
+    digest: f1af42e4d140fb38251a55e65d0bc222a91736c77cec7841cbffcdaeef92057d
+    name: ncs-manifest
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-release-1/ncs-manifest-999.999.5889.tgz
+    version: 999.999.5889
   ncs-metadata-exporter:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -1687,4 +1727,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-02-24T06:51:54.722851852Z"
+generated: "2025-02-25T03:59:41.325218123Z"
