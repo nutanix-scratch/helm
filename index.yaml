@@ -202,6 +202,16 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-release-1/ncs-manifest-999.999.5889.tgz
     version: 999.999.5889
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2025-02-27T08:05:12.633784921Z"
+    description: A Helm chart for ncs-manifest
+    digest: d36f6a6dd26971515b52aa4cd55c2f9ba6961885103d0d5bd432af6bfa674340
+    name: ncs-manifest
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-helm-release-0.0.5897-stg/ncs-manifest-0.0.5897-stg.tgz
+    version: 0.0.5897-stg
   ncs-metadata-exporter:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -1792,4 +1802,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-02-27T07:03:50.422029821Z"
+generated: "2025-02-27T08:05:12.63335939Z"
