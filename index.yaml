@@ -151,13 +151,13 @@ entries:
   ncs-cni:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-02-21T15:47:44.523271643Z"
+    created: "2025-02-27T07:03:50.423501248Z"
     description: A Helm chart for ncs-cni
-    digest: 0975cdda2f34ead51e8ee757783847913e2f117401eb4628ffedc7a6e84ef046
+    digest: 017e94199fb2373a5aa305d76243ad5f785403b9ecb81fffdbd1a2ca907d6fa9
     name: ncs-cni
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/ncs-helm-release-1/ncs-cni-0.0.655-stg.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/release-ncs-cni-0.0.655/ncs-cni-0.0.655-stg.tgz
     version: 0.0.655-stg
   ncs-collector-chart:
   - apiVersion: v2
@@ -1792,4 +1792,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-02-27T06:35:55.81145006Z"
+generated: "2025-02-27T07:03:50.422029821Z"
