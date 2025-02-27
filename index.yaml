@@ -134,6 +134,20 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-helm-release-1/ncs-cluster-operator-999.999.2035-stg.tgz
     version: 999.999.2035-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-02-27T06:35:55.81332143Z"
+    dependencies:
+    - name: ncs-cni
+      repository: https://nutanix-scratch.github.io/helm
+      version: ~0.0.1
+    description: A Helm chart for NCS Cluster Operator
+    digest: 1fa396e68584821e79ae54956a7ea2660bf99c377433ddd9d4afd91dcd46dda3
+    name: ncs-cluster-operator
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-cluster-operator-0.0.2038-stg.tgz
+    version: 0.0.2038-stg
   ncs-cni:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -145,7 +159,28 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-helm-release-1/ncs-cni-0.0.655-stg.tgz
     version: 0.0.655-stg
+  ncs-collector-chart:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-02-27T06:35:55.813838781Z"
+    description: A Helm chart for ncs-collector
+    digest: ddaed9cc81ea43b7cfd49aa8c2efbf06767719c53e166643e2acd41c5cd08082
+    name: ncs-collector-chart
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-collector-chart-0.0.61-stg.tgz
+    version: 0.0.61-stg
   ncs-installer-agent:
+  - apiVersion: v1
+    appVersion: 1.0.0
+    created: "2025-02-27T06:35:55.828402065Z"
+    description: NCS Installer Agent
+    digest: 1cdac158a2b4893cdd0af94b2c4a5a0fed69571b77961d185ed83d112dfc389d
+    name: ncs-installer-agent
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-installer-agent-0.0.2095-stg.tgz
+    version: 0.0.2095-stg
   - apiVersion: v1
     appVersion: 1.0.0
     created: "2025-02-21T15:47:44.537245213Z"
@@ -178,6 +213,16 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-helm-release-1/ncs-metadata-exporter-999.999.129-stg.tgz
     version: 999.999.129-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-02-27T06:35:55.829068208Z"
+    description: A Helm chart for ncs-metadata-exporter
+    digest: 88cee7e8057b0d540b93be4744066c4b12b56d895a1f19ceeaa32758fef0c724
+    name: ncs-metadata-exporter
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-metadata-exporter-0.0.132-stg.tgz
+    version: 0.0.132-stg
   ncs-ndk:
   - annotations:
       artifacthub.io/changes: |
@@ -189,11 +234,11 @@ entries:
           email: cloudnative@nutanix.com
     apiVersion: v2
     appVersion: 1.2.0
-    created: "2025-02-24T06:13:59.335241778Z"
+    created: "2025-02-27T06:35:55.838742869Z"
     description: Helm chart for Nutanix Data Services for Kubernetes (NDK). NDK provides
       for application-centric data management services for containerized workloads
       managed by Kubernetes.
-    digest: f088a07ee19634e11c96ac9a8bfc9eb279783c9640657451107cb5ed9af00519
+    digest: 97403bdb2bb65aa0092cd523eb5a79c82782abf0ffb9cc535601173320ed04c2
     home: https://github.com/nutanix-core/k8s-juno
     icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
     keywords:
@@ -214,7 +259,7 @@ entries:
     name: ncs-ndk
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/ncs-ndk-helm-release-2/ncs-ndk-1.2.0-stg-2.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-ndk-1.2.0-stg-2.tgz
     version: 1.2.0-stg-2
   ncs-nutanix-csi-storage:
   - annotations:
@@ -232,9 +277,9 @@ entries:
         - url: https://artifacthub.io/packages/helm/nutanix/nutanix-csi-snapshot
     apiVersion: v1
     appVersion: 3.2.0
-    created: "2025-02-24T06:51:54.72523441Z"
+    created: "2025-02-27T06:35:55.841600775Z"
     description: Nutanix Container Storage Interface (CSI) Driver
-    digest: 70382a0f1adca240d01b6e0b6ded5ee476ff1e3f26a835fbde4943d292b6aca1
+    digest: 92e6139dba6c8e9efa268ac23f47191224dcc6d0054d3c9ae026daf9aeca79b4
     home: https://github.com/nutanix/helm
     icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
     keywords:
@@ -253,7 +298,7 @@ entries:
       name: nutanix-cloud-native-bot
     name: ncs-nutanix-csi-storage
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/ncs-nutanix-csi-storage-release-1/ncs-nutanix-csi-storage-3.2.0-stg-1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-nutanix-csi-storage-3.2.0-stg-1.tgz
     version: 3.2.0-stg-1
   ncs-nxctl:
   - apiVersion: v2
@@ -266,7 +311,27 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-helm-release-1/ncs-nxctl-999.999.1176-stg.tgz
     version: 999.999.1176-stg
+  - apiVersion: v2
+    appVersion: v1.0.a1
+    created: "2025-02-27T06:35:56.421893386Z"
+    description: A Helm chart for ncs-nxctl
+    digest: 97a3978ab16e39ee8c0a97ef8bc7347e4b0396564e40c53d6fa971f300656b9f
+    name: ncs-nxctl
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-nxctl-0.0.1211-stg.tgz
+    version: 0.0.1211-stg
   ncs-orchestrator:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-02-27T06:35:56.434221334Z"
+    description: A Library Helm chart for ncs-orchestrator
+    digest: ab62c076fa7de08766a2d297aaae8166772559f0f937ea0a2ce0c1db3491a8e0
+    name: ncs-orchestrator
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-orchestrator-0.0.2095-stg.tgz
+    version: 0.0.2095-stg
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-02-21T15:47:45.01304196Z"
@@ -1727,4 +1792,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-02-25T03:59:41.325218123Z"
+generated: "2025-02-27T06:35:55.81145006Z"
