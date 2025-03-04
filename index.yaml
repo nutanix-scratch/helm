@@ -452,6 +452,44 @@ entries:
       artifacthub.io/recommendations: |
         - url: https://artifacthub.io/packages/helm/nutanix/nutanix-csi-snapshot
     apiVersion: v1
+    appVersion: 3.2.0-stg-2
+    created: "2025-03-04T04:22:46.067218161Z"
+    description: Nutanix Container Storage Interface (CSI) Driver
+    digest: 9c69aca388d36accbc7b66951e1e7b1800dcea2f68b1099cdd75c63f5a736933
+    home: https://github.com/nutanix/helm
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Nutanix
+    - Storage
+    - Volumes
+    - Files
+    - StorageClass
+    - RedHat
+    - CentOS
+    - Ubuntu
+    - CSI
+    kubeVersion: '>= 1.20.0-0'
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: ncs-nutanix-csi-storage
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-nutanix-csi-storage-release-2/ncs-nutanix-csi-storage-3.2.0-stg-2.tgz
+    version: 3.2.0-stg-2
+  - annotations:
+      artifacthub.io/changes: |
+        - Update Nutanix CSI Driver to 3.2.0
+      artifacthub.io/containsSecurityUpdates: "true"
+      artifacthub.io/displayName: Nutanix CSI Storage
+      artifacthub.io/links: |
+        - name: Nutanix CSI Driver documentation
+          url: https://portal.nutanix.com/page/documents/details?targetId=CSI-Volume-Driver-v3_2:CSI-Volume-Driver-v3_2
+      artifacthub.io/maintainers: |
+        - name: Nutanix Cloud Native Team
+          email: cloudnative@nutanix.com
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/nutanix/nutanix-csi-snapshot
+    apiVersion: v1
     appVersion: 3.2.0
     created: "2025-02-27T06:35:55.841600775Z"
     description: Nutanix Container Storage Interface (CSI) Driver
@@ -1988,4 +2026,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-02-28T05:28:50.84687463Z"
+generated: "2025-03-04T04:22:46.064945283Z"
