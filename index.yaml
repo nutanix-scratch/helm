@@ -234,6 +234,20 @@ entries:
   ncs-cluster-operator:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-03-04T09:33:50.577611148Z"
+    dependencies:
+    - name: ncs-cni
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.659-stg
+    description: A Helm chart for NCS Cluster Operator
+    digest: c08ad4c8f5414b8debcd7d65928b4cc3ac8fde1a0f0f373f5d4b9ae313a18f3a
+    name: ncs-cluster-operator
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-helm-release-4mar2025/ncs-cluster-operator-999.999.2068-stg.tgz
+    version: 999.999.2068-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-02-28T04:53:28.688916704Z"
     dependencies:
     - name: ncs-cni
@@ -277,6 +291,16 @@ entries:
   ncs-cni:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-03-04T09:33:50.578387342Z"
+    description: A Helm chart for ncs-cni
+    digest: 79d2bbcdba3f0c581344ea93a7d59b2850e767ce791356199663e34d9253adae
+    name: ncs-cni
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-helm-release-4mar2025/ncs-cni-999.999.659-stg.tgz
+    version: 999.999.659-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-02-28T04:53:28.689654895Z"
     description: A Helm chart for ncs-cni
     digest: 29ed89cc809d8ab7109e19253b5eb0225dd525bc7b3c289364b3f125c0be5e4e
@@ -298,6 +322,16 @@ entries:
   ncs-collector-chart:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-03-04T09:33:50.578956898Z"
+    description: A Helm chart for ncs-collector
+    digest: 1c344c24513afe12380660929b3ab9c8a00c4a8c4bdab6299dd4eb72578ebba5
+    name: ncs-collector-chart
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-helm-release-4mar2025/ncs-collector-chart-999.999.64-stg.tgz
+    version: 999.999.64-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-02-28T04:53:28.690168109Z"
     description: A Helm chart for ncs-collector
     digest: e57dce328cc098460add2ac04d7bb84722dc6079c1c553be76ce6208c355a416
@@ -317,6 +351,16 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-collector-chart-0.0.61-stg.tgz
     version: 0.0.61-stg
   ncs-installer-agent:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-04T09:33:50.593856528Z"
+    description: NCS Installer Agent
+    digest: 10343e737c52d6028ebae2e2d87cd3f882af6f3112142a9cd72d675edea8e9be
+    name: ncs-installer-agent
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-helm-release-4mar2025/ncs-installer-agent-999.999.2116-stg.tgz
+    version: 999.999.2116-stg
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-02-28T04:53:28.705226195Z"
@@ -411,6 +455,16 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-helm-release-0.0.5897-stg/ncs-manifest-0.0.5897-stg.tgz
     version: 0.0.5897-stg
   ncs-metadata-exporter:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-04T09:33:50.594590002Z"
+    description: A Helm chart for ncs-metadata-exporter
+    digest: f6a9cb830085d8ac321f9b266cbbc67be0a2686ea190fc8668f5f6347e4e35a5
+    name: ncs-metadata-exporter
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-helm-release-4mar2025/ncs-metadata-exporter-999.999.135-stg.tgz
+    version: 999.999.135-stg
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-02-28T04:53:28.705949128Z"
@@ -559,6 +613,16 @@ entries:
   ncs-nxctl:
   - apiVersion: v2
     appVersion: v1.0.a1
+    created: "2025-03-04T09:33:51.097722214Z"
+    description: A Helm chart for ncs-nxctl
+    digest: b8804f4811f8fe989ffa1cc0414bf886729cbe4c6972e956b2e669c737f15dc8
+    name: ncs-nxctl
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-helm-release-4mar2025/ncs-nxctl-999.999.1234-stg.tgz
+    version: 999.999.1234-stg
+  - apiVersion: v2
+    appVersion: v1.0.a1
     created: "2025-02-28T04:53:29.232234192Z"
     description: A Helm chart for ncs-nxctl
     digest: 25cd06dab175b8124e7c454112cdcdc56a1573f9f0d2f64f512cab0b0ec81389
@@ -588,6 +652,16 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-nxctl-0.0.1211-stg.tgz
     version: 0.0.1211-stg
   ncs-orchestrator:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-04T09:33:51.111387323Z"
+    description: A Library Helm chart for ncs-orchestrator
+    digest: 9a47ed6ff36b9857c5a300abdf3e66e2c1cda8ad2a7aa3e36ed85c1c07e06327
+    name: ncs-orchestrator
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-helm-release-4mar2025/ncs-orchestrator-999.999.2116-stg.tgz
+    version: 999.999.2116-stg
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-02-28T04:53:29.243338398Z"
@@ -2068,4 +2142,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-03-04T05:29:52.040440466Z"
+generated: "2025-03-04T09:33:50.558419176Z"
