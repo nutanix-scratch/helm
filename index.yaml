@@ -122,6 +122,34 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2025-03-04T09:46:13.61075001Z"
+    dependencies:
+    - name: ncs-cluster-operator
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.2068-stg
+    - name: ncs-nxctl
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.1234-stg
+    - name: ncs-metadata-exporter
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.135-stg
+    - name: ncs-collector-chart
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.64-stg
+    description: An Umbrella Helm Chart representing the NCS app
+    digest: 5db13dea19998e2aa96387fd6bdab6780399fcca8cf192525c312a14db8a4407
+    keywords:
+    - ncs-cluster-operator
+    - ncs-nxctl
+    - ncs-metadata-exporter
+    - ncs-collector-chart
+    name: ncs-app-aws
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/custom-manifest-0.0.5897-stg-7-release/ncs-app-aws-0.0.5897-stg-7.tgz
+    version: 0.0.5897-stg-7
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2025-03-04T05:29:27.553114715Z"
     dependencies:
     - name: ncs-cluster-operator
@@ -402,6 +430,20 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-release-1/ncs-manifest-999.999.5889.tgz
     version: 999.999.5889
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-04T09:46:13.623266285Z"
+    dependencies:
+    - name: ncs-installer-agent
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.2116-stg
+    description: A Helm chart for ncs-manifest
+    digest: 56b10e63b1b3027fd4d542af5637bb182f9c5c7a07030089243a05451b9a8bb2
+    name: ncs-manifest
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/custom-manifest-0.0.5897-stg-7-release/ncs-manifest-0.0.5897-stg-7.tgz
+    version: 0.0.5897-stg-7
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-03-04T05:29:52.087039417Z"
@@ -2142,4 +2184,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-03-04T09:33:50.558419176Z"
+generated: "2025-03-04T09:46:12.992175897Z"
