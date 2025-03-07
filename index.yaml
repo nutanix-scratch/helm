@@ -122,6 +122,34 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2025-03-07T09:59:44.498576921Z"
+    dependencies:
+    - name: ncs-cluster-operator
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.2081-stg
+    - name: ncs-nxctl
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.1241-stg
+    - name: ncs-metadata-exporter
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.136-stg
+    - name: ncs-collector-chart
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.67-stg
+    description: An Umbrella Helm Chart representing the NCS app
+    digest: d74949fcc89c0a4abfc62d703d7add080f9fb8e0d72ac72ecca0491310c51fab
+    keywords:
+    - ncs-cluster-operator
+    - ncs-nxctl
+    - ncs-metadata-exporter
+    - ncs-collector-chart
+    name: ncs-app-aws
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-ncs-app-aws-0.0.5897-stg-9/ncs-app-aws-0.0.5897-stg-9.tgz
+    version: 0.0.5897-stg-9
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2025-03-06T05:13:54.484896994Z"
     dependencies:
     - name: ncs-cluster-operator
@@ -2395,4 +2423,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-03-07T09:36:45.548561686Z"
+generated: "2025-03-07T09:59:44.008279374Z"
