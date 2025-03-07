@@ -542,6 +542,20 @@ entries:
     version: 999.999.5889
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-03-07T10:03:34.803278995Z"
+    dependencies:
+    - name: ncs-installer-agent
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.2142-stg
+    description: A Helm chart for ncs-manifest
+    digest: 4d835872809c85a936c1c05665156983ba19dfa2afd258a963503118273b43a0
+    name: ncs-manifest
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-ncs-manifest-0.0.5897-stg-9/ncs-manifest-0.0.5897-stg-9.tgz
+    version: 0.0.5897-stg-9
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-03-06T05:13:54.496898054Z"
     dependencies:
     - name: ncs-installer-agent
@@ -2423,4 +2437,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-03-07T09:59:44.008279374Z"
+generated: "2025-03-07T10:03:34.788361673Z"
