@@ -90,6 +90,17 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ndk-k8s-agent-rc-1/k8s-agent-1.0.363.tgz
     version: 1.0.363
+  native-pc:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-03-13T09:36:01.90642926Z"
+    description: A Helm chart for CN-AOS Control Plane
+    digest: 790223745f53755b426ba483495117d6d03751b61e94ebf4a0cb83adb721f5b9
+    name: native-pc
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-native-pc-0.0.204/native-pc-0.0.204.tgz
+    version: 0.0.204
   ncs-app-aws:
   - annotations:
       appType: Application
@@ -2505,4 +2516,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-03-11T09:12:24.718075039Z"
+generated: "2025-03-13T09:36:01.835418073Z"
