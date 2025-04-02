@@ -93,6 +93,16 @@ entries:
   native-pc:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-04-02T17:20:49.218611218Z"
+    description: A Helm chart for CN-AOS Control Plane
+    digest: fc994f885fdf405e8d057cc194e03c30fb77d89f25a491e338095514b8007bfb
+    name: native-pc
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-native-pc-0.0.222/native-pc-0.0.222.tgz
+    version: 0.0.222
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-04-02T17:20:08.131454629Z"
     description: A Helm chart for CN-AOS Control Plane
     digest: 2b1673c23d885af0b80b82d4cd794a5ff1c162d0247fcd2fe438d961aaa8d6ee
@@ -2874,4 +2884,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-04-02T17:20:08.086855371Z"
+generated: "2025-04-02T17:20:49.148639388Z"
