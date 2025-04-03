@@ -678,13 +678,13 @@ entries:
   ncs-installer-agent:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-04-02T11:37:27.452911238Z"
+    created: "2025-04-03T14:03:42.21849475Z"
     description: NCS Installer Agent
-    digest: b3c7e8ebcc2fe110dd004f8e2f9d9c5d58bc146d9a112d41d0f100635aac2431
+    digest: 16e5e0211c27fd9ee2b17b9773b7931c9a6675887e0806a453665dcc006b55f6
     name: ncs-installer-agent
     type: library
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/release-ncs-installer-orch-999.999.2327/ncs-installer-agent-999.999.2327-stg.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/release-ncs-999.999.2327/ncs-installer-agent-999.999.2327-stg.tgz
     version: 999.999.2327-stg
   - apiVersion: v2
     appVersion: 1.0.0
@@ -1278,13 +1278,13 @@ entries:
   ncs-orchestrator:
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-04-02T11:37:27.465817102Z"
+    created: "2025-04-03T14:03:42.232803764Z"
     description: A Library Helm chart for ncs-orchestrator
-    digest: 038bebdd50ab1ac1729a612e6cd945e36719a7d72b177629bad7718f53d4415c
+    digest: 147f3e32218534406ee0eaa551a721c5fb18fdb9dcf55a080439629b61903152
     name: ncs-orchestrator
     type: library
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/release-ncs-installer-orch-999.999.2327/ncs-orchestrator-999.999.2327-stg.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/release-ncs-999.999.2327/ncs-orchestrator-999.999.2327-stg.tgz
     version: 999.999.2327-stg
   - apiVersion: v2
     appVersion: 1.0.0
@@ -2884,4 +2884,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-04-02T17:20:49.148639388Z"
+generated: "2025-04-03T14:03:42.177352025Z"
