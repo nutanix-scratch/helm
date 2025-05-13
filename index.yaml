@@ -93,6 +93,16 @@ entries:
   native-pc:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-05-13T08:25:39.730195361Z"
+    description: A Helm chart for CN-AOS Control Plane
+    digest: 603a9da2ac8d155cb3ed3267b4a8cd838dfb47e654bdf2abfe2fa901c3b17f56
+    name: native-pc
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-helm-1.0.0-6585/native-pc-1.0.0-99.tgz
+    version: 1.0.0-99
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-05-13T08:19:18.445874707Z"
     description: A Helm chart for CN-AOS Control Plane
     digest: 0fffe90b2abbdefa8e8a1eeb0060bc6323ecc70f0ff3119ea54cd6a95153b4c7
@@ -567,6 +577,20 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-helm-release-1/ncs-cluster-operator-999.999.2035-stg.tgz
     version: 999.999.2035-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-05-13T08:25:39.73185075Z"
+    dependencies:
+    - name: ncs-cni
+      repository: https://nutanix-scratch.github.io/helm
+      version: ~1.0.0-1-stg
+    description: A Helm chart for NCS Cluster Operator
+    digest: f516c846c44d47bdd996fe766ca0c652c86377fec3e9092765377270db6ab232
+    name: ncs-cluster-operator
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-helm-1.0.0-6585/ncs-cluster-operator-1.0.0-2152-stg.tgz
+    version: 1.0.0-2152-stg
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-05-13T08:19:18.447611561Z"
@@ -3172,4 +3196,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-05-13T08:19:18.395246589Z"
+generated: "2025-05-13T08:25:39.688303012Z"
