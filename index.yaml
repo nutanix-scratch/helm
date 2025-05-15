@@ -33,6 +33,24 @@ entries:
   - annotations:
       appType: Service
     apiVersion: v2
+    appVersion: 1.1.0
+    created: "2025-05-15T03:21:07.442532175Z"
+    description: A Helm chart for Flux Service
+    digest: 199004d0ea95e083bd1f4ff5a6dbba2f7792f010407b82c46c2b7601e5061bdd
+    keywords:
+    - nutanix
+    - power
+    maintainers:
+    - email: rajamokshagna.k@nutanix.com
+      name: Mokshagna Krishna
+    name: flux
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/flux-chart-1.1.0-stage/flux-1.1.0.tgz
+    version: 1.1.0
+  - annotations:
+      appType: Service
+    apiVersion: v2
     appVersion: 1.0.0
     created: "2025-02-14T05:55:45.257610264Z"
     description: A Helm chart for Flux Service
@@ -3280,4 +3298,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
-generated: "2025-05-13T09:08:09.82621937Z"
+generated: "2025-05-15T03:21:07.441086909Z"
