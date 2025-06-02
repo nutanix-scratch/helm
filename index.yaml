@@ -5,6 +5,50 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-06-02T22:54:49.380867987Z"
+    dependencies:
+    - condition: aiops-base.enabled
+      name: aiops-base
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.1.3
+    - condition: vulcan.enabled
+      name: vulcan
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.9
+    - condition: reports.enabled
+      name: reports
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.11
+    - condition: neuron.enabled
+      name: neuron
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.16
+    - condition: uda.enabled
+      name: uda
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.24
+    - condition: sizer.enabled
+      name: sizer
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.0
+    description: An Umbrella Helm chart representing the Intelligent Operation Platform
+    digest: 5dfd0c020edd675a8b0bcdbb60b24d2c6774d92245a27f761bd5d3ca086800ff
+    keywords:
+    - aiops-base
+    - vulcan
+    - reports
+    - neuron
+    - uda
+    - sizer
+    name: aiops
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2/aiops-1.0.16.tgz
+    version: 1.0.16
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-05-31T23:29:29.182201227Z"
     dependencies:
     - condition: aiops-base.enabled
@@ -829,6 +873,58 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-06-02T22:54:49.393745443Z"
+    dependencies:
+    - condition: ncm-common-base.enabled
+      name: ncm-common-base
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.0
+    - condition: altinity-clickhouse-operator.enabled
+      name: altinity-clickhouse-operator
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.4
+    - alias: ncm-common-namespace
+      condition: ncm-common-namespace.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.0
+    - alias: ncm-datastore-namespace
+      condition: ncm-datastore-namespace.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.0
+    - alias: ncm-aiops-namespace
+      condition: ncm-aiops-namespace.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.0
+    - alias: ncm-self-service-namespace
+      condition: ncm-self-service-namespace.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.0
+    - condition: ncm-release-meta.enabled
+      name: ncm-release-meta
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.5.29
+    description: An Umbrella Helm chart representing the NCM base charts
+    digest: e2bdec5bc74776ef209477cfe3a787c10da1ac501efb46192c00388561cd7a55
+    keywords:
+    - ncm-common-namespace
+    - ncm-datastore-namespace
+    - ncm-aiops-namespace
+    - ncm-self-service-namespace
+    - altinity-clickhouse-operator
+    - ncm-common-base
+    name: ncm-base
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2/ncm-base-1.0.46.tgz
+    version: 1.0.46
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-05-31T23:29:29.224831949Z"
     dependencies:
     - condition: ncm-common-base.enabled
@@ -898,6 +994,209 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ncm-calm-1.0.80.tgz
     version: 1.0.80
   ncm-common:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-02T22:54:49.461699036Z"
+    dependencies:
+    - condition: ikat.enabled
+      name: ikat
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.1736671716
+    - condition: mercury.enabled
+      name: mercury
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.1737106335
+    - condition: ncm-adonis-service.enabled
+      name: ncm-adonis-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 25.1.23
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.6
+    - condition: chakr-db-ext4.enabled
+      name: chakr-db-ext4
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.9
+    - condition: insights-server-chakr.enabled
+      name: insights-server-chakr
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.13
+    - alias: self-service-zookeeper
+      condition: self-service-zookeeper.enabled
+      name: zookeeper
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.6
+    - alias: self-service-chakr-db-ext4
+      condition: self-service-chakr-db-ext4.enabled
+      name: chakr-db-ext4
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.9
+    - alias: self-service-insights-server-chakr
+      condition: self-service-insights-server-chakr.enabled
+      name: insights-server-chakr
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.13
+    - condition: cpaas-nats.enabled
+      name: cpaas-nats
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.6
+    - condition: ergon.enabled
+      name: ergon
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.1.11
+    - condition: statsgw.enabled
+      name: statsgw
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.18
+    - condition: dmis.enabled
+      name: dmis
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.4
+    - condition: dcis.enabled
+      name: dcis
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.24
+    - condition: cluster-mgmt.enabled
+      name: cluster-mgmt
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.19
+    - condition: ncm-data-processor.enabled
+      name: ncm-data-processor
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.14
+    - condition: dpm.enabled
+      name: dpm
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.18
+    - condition: aiops-ui.enabled
+      name: aiops-ui
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.149
+    - condition: search.enabled
+      name: search
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.24
+    - condition: ncm-postgres.enabled
+      name: ncm-postgres
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.1
+    - condition: ncm-epsilon.enabled
+      name: ncm-epsilon
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.85
+    - condition: onboarding-svc.enabled
+      name: onboarding-svc
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.11
+    - condition: clickhouse-keeper.enabled
+      name: clickhouse-keeper
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.1
+    - condition: clickhouse-server.enabled
+      name: clickhouse-server
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.1
+    - condition: cpaas-ncm-schema.enabled
+      name: cpaas-ncm-schema
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.4
+    - condition: ncm-backup.enabled
+      name: ncm-backup
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.22
+    - condition: ncm-migration.enabled
+      name: ncm-migration
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.18
+    - condition: cfs.enabled
+      name: cfs
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.2
+    - condition: zeus-collector.enabled
+      name: zeus-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.5
+    - condition: insights-collector.enabled
+      name: insights-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.2
+    - condition: msp-prometheus-collector.enabled
+      name: msp-prometheus-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.4
+    - condition: otel-collector.enabled
+      name: otel-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.1
+    - alias: filestore-chakr-db-ext4
+      condition: filestore-chakr-db-ext4.enabled
+      name: chakr-db-ext4
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.9
+    - condition: external-notifications-service.enabled
+      name: external-notifications-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.11
+    - condition: ncm-post-processor.enabled
+      name: ncm-post-processor
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.4
+    - condition: signals-manager.enabled
+      name: signals-manager
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.15
+    - condition: ncm-dbal-dedupe.enabled
+      name: ncm-dbal-dedupe
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.7
+    description: An Umbrella Helm chart representing the NCM Common Platform
+    digest: 743dde7a0f3e0be378e493460fc77296d697e4e03a475648f18870a5029d641b
+    keywords:
+    - ikat
+    - mercury
+    - adonis
+    - zookeeper
+    - chakr-db-ext4
+    - insights-server-chakr
+    - self-service-zookeeper
+    - self-service-chakr-db-ext4
+    - self-service-insights-server-chakr
+    - ergon
+    - statsgw
+    - dmis
+    - dcis
+    - cluster-mgmt
+    - cpaas-nats
+    - ncm-data-processor
+    - dpm
+    - ncm-migration
+    - aiops-ui
+    - search
+    - ncm-postgres
+    - ncm-epsilon
+    - onboarding-svc
+    - clickhouse-keeper
+    - clickhouse-server
+    - cpaas-ncm-schema
+    - ncm-backup
+    - cfs
+    - zeus-collector
+    - insights-collector
+    - msp-prometheus-collector
+    - otel-collector
+    - filestore-chakr-db-ext4
+    - external-notifications-service
+    - ncm-post-processor
+    - signals-manager
+    - ncm-dbal-dedupe
+    name: ncm-common
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2/ncm-common-1.0.82.tgz
+    version: 1.0.82
   - annotations:
       appType: Application
     apiVersion: v2
@@ -1248,6 +1547,47 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ncm-release-meta-1.5.27.tgz
     version: 1.5.27
   ncm-self-service:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-02T22:54:49.465639414Z"
+    dependencies:
+    - condition: ncm-calm.enabled
+      name: ncm-calm
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.85
+    - condition: ncm-policy.enabled
+      name: ncm-policy
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.83
+    - condition: ncm-tunnel-server.enabled
+      name: ncm-tunnel-server
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.86
+    - condition: insights-collector.enabled
+      name: insights-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.1.61
+    description: An Umbrella Helm chart representing the NCM Self Service Platform
+    digest: 328f1a5bf05fdab1886ca198e0a2920fa8634c393b6e4982856486dda058e5d0
+    keywords:
+    - ncm-calm
+    - ncm-policy
+    - ncm-tunnel-server
+    - insights-collector
+    maintainers:
+    - email: raj.panchal@nutanix.com
+      name: Raj Panchal
+    - email: mitesh.madaan@nutanix.com
+      name: Mitesh Madaan
+    - email: akash.kolli@nutanix.com
+      name: Akash Kolli
+    name: ncm-self-service
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2/ncm-self-service-1.0.19.tgz
+    version: 1.0.19
   - annotations:
       appType: Application
     apiVersion: v2
@@ -4840,4 +5180,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-02T03:08:01.743673242Z"
+generated: "2025-06-02T22:54:49.376547008Z"
