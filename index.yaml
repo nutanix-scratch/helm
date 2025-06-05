@@ -5082,6 +5082,19 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
+  pc-registration-config:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-05T04:55:42.011833702Z"
+    description: A Helm chart for node proxy configuration on PC.
+    digest: aa7651e5fbe7804aa84f326ccc075994edeaeff664b450c32bc47de7932425a7
+    name: pc-registration-config
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2_Delta1_Charts/pc-registration-config-1.0.2.tgz
+    version: 1.0.2
   reports:
   - annotations:
       appType: Service
@@ -5223,4 +5236,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-04T03:14:32.578199592Z"
+generated: "2025-06-05T04:55:42.010927649Z"
