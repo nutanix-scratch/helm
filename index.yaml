@@ -3654,6 +3654,19 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/nutanix-csi-storage-3.0.0-rc7/nutanix-csi-storage-3.0.0-2402.tgz
     version: 3.0.0-2402
+  nutanix-infra-data-receiver:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-06-05T05:11:50.844710032Z"
+    description: A Helm chart for Kubernetes
+    digest: ec547cb65faec290bea49ba5b9f81a976da3d64fc5ae63bd2ca08a39256bbc7b
+    name: nutanix-infra-data-receiver
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2_Delta3_Charts/nutanix-infra-data-receiver-1.0.25.tgz
+    version: 1.0.25
   nutanix-k8s-agent:
   - apiVersion: v2
     appVersion: 1.1.668
@@ -5249,4 +5262,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-05T04:59:52.108108259Z"
+generated: "2025-06-05T05:11:50.843522371Z"
