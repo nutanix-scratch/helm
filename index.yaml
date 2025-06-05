@@ -5162,6 +5162,19 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/sizer-1.0.0.tgz
     version: 1.0.0
+  smsp-registration-config:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-05T04:59:52.109099182Z"
+    description: A Helm chart for node proxy configuration on S-MSP
+    digest: 4d82dc13450dabc1f924b81a0f283b234ab5c9600f56cffce5d1fff28a7f9636
+    name: smsp-registration-config
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2_Delta2_Charts/smsp-registration-config-1.0.1.tgz
+    version: 1.0.1
   statsgw:
   - annotations:
       appType: Service
@@ -5236,4 +5249,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-05T04:55:42.010927649Z"
+generated: "2025-06-05T04:59:52.108108259Z"
