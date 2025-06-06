@@ -5,7 +5,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-06-06T09:40:22.564978414Z"
+    created: "2025-06-06T22:49:25.665005664Z"
     dependencies:
     - condition: aiops-base.enabled
       name: aiops-base
@@ -32,7 +32,7 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 1.0.0
     description: An Umbrella Helm chart representing the Intelligent Operation Platform
-    digest: f49107881438347a219f0f14fe33f1b6b67cc9fa3905ee0dd5ed965f451bfb79
+    digest: c38caf32390ef2258fbe84104daee006f0a9fc47c7c8692ea5401ca113010915
     keywords:
     - aiops-base
     - vulcan
@@ -43,7 +43,7 @@ entries:
     name: aiops
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3/aiops-1.0.16.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final/aiops-1.0.16.tgz
     version: 1.0.16
   - annotations:
       appType: Application
@@ -873,7 +873,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-06-06T09:40:22.579936348Z"
+    created: "2025-06-06T22:49:25.677243789Z"
     dependencies:
     - condition: ncm-common-base.enabled
       name: ncm-common-base
@@ -908,7 +908,7 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 1.5.30
     description: An Umbrella Helm chart representing the NCM base charts
-    digest: 793b7563e71e9cbad6d8ff9edd36639c76378cc9294830fc51d6afd642c02204
+    digest: f905dea8f50381e19685159a7a314919ea8f65211ba9325d2f80eda9e57f178f
     keywords:
     - ncm-common-namespace
     - ncm-datastore-namespace
@@ -919,7 +919,7 @@ entries:
     name: ncm-base
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3/ncm-base-1.0.47.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final/ncm-base-1.0.47.tgz
     version: 1.0.47
   - annotations:
       appType: Application
@@ -1050,7 +1050,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-06-06T09:40:22.619583805Z"
+    created: "2025-06-06T22:49:25.73672207Z"
     dependencies:
     - condition: ikat.enabled
       name: ikat
@@ -1195,17 +1195,17 @@ entries:
     - condition: ncm-post-processor.enabled
       name: ncm-post-processor
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
-      version: 1.0.4
+      version: 1.0.5
     - condition: signals-manager.enabled
       name: signals-manager
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
-      version: 1.0.15
+      version: 1.0.16
     - condition: ncm-dbal-dedupe.enabled
       name: ncm-dbal-dedupe
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 1.0.7
     description: An Umbrella Helm chart representing the NCM Common Platform
-    digest: cc4c54ecae5ae0a8c5aea27ef86167437fa074ec1c3ed156cf7649e7ad7e4bd2
+    digest: 3d1c80af18d645ae46aebd86b7bf5c9808029ec1a36f118638c0ddf5ae067df2
     keywords:
     - ikat
     - mercury
@@ -1247,7 +1247,7 @@ entries:
     name: ncm-common
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3/ncm-common-1.0.83.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final/ncm-common-1.0.83.tgz
     version: 1.0.83
   - annotations:
       appType: Application
@@ -1806,7 +1806,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-06-06T09:40:22.623474277Z"
+    created: "2025-06-06T22:49:25.740526328Z"
     dependencies:
     - condition: ncm-calm.enabled
       name: ncm-calm
@@ -1825,7 +1825,7 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 0.1.61
     description: An Umbrella Helm chart representing the NCM Self Service Platform
-    digest: d2166af23db499f4642d847a174a5667ac001df5db86679bb3196ff5584b383d
+    digest: cf279812e632bc7d2318069cec33337e3ba7717fd11143cc41aadff0cda21268
     keywords:
     - ncm-calm
     - ncm-policy
@@ -1841,7 +1841,7 @@ entries:
     name: ncm-self-service
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3/ncm-self-service-1.0.20.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final/ncm-self-service-1.0.20.tgz
     version: 1.0.20
   - annotations:
       appType: Application
@@ -5679,4 +5679,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-06T15:06:20.9427407Z"
+generated: "2025-06-06T22:49:25.660516924Z"
