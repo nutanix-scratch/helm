@@ -3955,13 +3955,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-05T05:11:50.844710032Z"
+    created: "2025-06-07T16:13:23.750472727Z"
     description: A Helm chart for Kubernetes
-    digest: ec547cb65faec290bea49ba5b9f81a976da3d64fc5ae63bd2ca08a39256bbc7b
+    digest: 360f513940adc87c319f22bdce4b81082ba4bfc7a2a88e3c122eca77470d0109
     name: nutanix-infra-data-receiver
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2_Delta3_Charts/nutanix-infra-data-receiver-1.0.25.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_OutOfBand_Charts/nutanix-infra-data-receiver-1.0.25.tgz
     version: 1.0.25
   nutanix-k8s-agent:
   - apiVersion: v2
@@ -5605,6 +5605,19 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2_Delta2_Charts/smsp-registration-config-1.0.1.tgz
     version: 1.0.1
+  sqlserver:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-06-07T16:13:23.751574036Z"
+    description: A Helm chart for aiops sqlserver collector
+    digest: 872cf6a8b553b5cbe6fa27b0daa109e46a8eda08cd5c4e0f1f25b3ce2213389a
+    name: sqlserver
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_OutOfBand_Charts/sqlserver-0.0.29.tgz
+    version: 0.0.29
   statsgw:
   - annotations:
       appType: Service
@@ -5637,6 +5650,19 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/uda-1.0.24.tgz
     version: 1.0.24
+  vcenter:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-06-07T16:13:23.752529796Z"
+    description: A Helm chart for aiops vcenter collector
+    digest: 084def213ea248df5a93a49bb1a3a12028e7043aa4713299c09a8992b67c9cae
+    name: vcenter
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_OutOfBand_Charts/vcenter-0.0.29.tgz
+    version: 0.0.29
   vulcan:
   - annotations:
       appType: Service
@@ -5679,4 +5705,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-06T22:49:25.660516924Z"
+generated: "2025-06-07T16:13:23.748934005Z"
