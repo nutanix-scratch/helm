@@ -94,16 +94,31 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.182618434Z"
+    created: "2025-06-09T21:51:22.106130598Z"
     description: An helm chart representing the Intelligent Operation Platform base
       chart.
-    digest: 6302142fa5d81666ba65f95c7b1f5350e303f3b56636763f3e374ccdc46168c3
+    digest: 152edcbb0e5118f83fcff0f00a203581ef8b00faeb0bd07e823420cda06de421
     name: aiops-base
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/aiops-base-0.1.3.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/aiops-base-0.1.3.tgz
     version: 0.1.3
   aiops-ui:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.2
+    created: "2025-06-09T21:51:22.106798948Z"
+    description: A Helm chart for AIOPs UI Deployment
+    digest: 5251b0260cc83c5b1ef8e8127b921c4efc56187d53fd1d6601eefc5579b0b298
+    maintainers:
+    - email: jing.gong@nutanix.com
+      name: AIOPs UI Team
+    name: aiops-ui
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/aiops-ui-1.0.149.tgz
+    version: 1.0.149
   - annotations:
       appType: Service
     apiVersion: v2
@@ -124,11 +139,11 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 0.24.2
-    created: "2025-05-31T23:29:29.193328989Z"
+    created: "2025-06-09T21:51:22.116617697Z"
     description: Helm chart to deploy [altinity-clickhouse-operator](https://github.com/Altinity/clickhouse-operator).  The
       ClickHouse Operator creates, configures and manages ClickHouse clusters running
       on Kubernetes.
-    digest: 61e39771afee8a83a9ed4a28b3095f77c2453f5f893f8046ebd3ba597fbc8bd5
+    digest: 4433270aa0da5bb2af16c925e4ae4b5da4f484e210662864c157c1c6ad5d9036
     icon: https://logosandtypes.com/wp-content/uploads/2020/12/altinity.svg
     maintainers:
     - email: support@altinity.com
@@ -136,9 +151,21 @@ entries:
     name: altinity-clickhouse-operator
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/altinity-clickhouse-operator-1.0.4.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/altinity-clickhouse-operator-1.0.4.tgz
     version: 1.0.4
   cfs:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.117464011Z"
+    description: A Helm chart for Collector Framework Service (Cfs)
+    digest: 21f6d01b82e60aa80c7768cc6fc7bb9109703f1a3135812ceffdd1c2bf6d1473
+    name: cfs
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/cfs-1.0.2.tgz
+    version: 1.0.2
   - annotations:
       appType: Service
     apiVersion: v2
@@ -156,13 +183,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.195495092Z"
+    created: "2025-06-09T21:51:22.118484129Z"
     description: Helm Chart for chakrdb service.
-    digest: e44b02e8ee50de531574317771490e186003fbce5f47ae10756af49312f40fdd
+    digest: 467917e65c65dbc2907bd6a4cfffdf01aea670213d5e36ea851fe22be0b41d70
     name: chakr-db-ext4
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/chakr-db-ext4-0.0.9.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/chakr-db-ext4-0.0.9.tgz
     version: 0.0.9
   cisco-device-connector:
   - annotations:
@@ -212,49 +239,49 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 24.8.8.17
-    created: "2025-05-31T23:29:29.196238104Z"
+    created: "2025-06-09T21:51:22.119247684Z"
     description: A Helm chart for SMSP
-    digest: c41d9524303ba5bde08e4a25f87347d0d4c79fc74bb039d278d16c9e2ad49b87
+    digest: 2c4a55af8fea44a73f89dc8e6a552d3635e770ab137f74cd6d82f87479cbc202
     name: clickhouse-keeper
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/clickhouse-keeper-1.0.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/clickhouse-keeper-1.0.1.tgz
     version: 1.0.1
   clickhouse-server:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 24.8.8.17
-    created: "2025-05-31T23:29:29.196991679Z"
+    created: "2025-06-09T21:51:22.120003733Z"
     description: A Helm chart for Clickhouse Cluster
-    digest: 5a4b5f6db6e39120f9570005ce1bf4f4764a7f5ee7afa3c29c3523fc7e6ef1c1
+    digest: 65665389bc90b90e5215c1cdb4a849b89b5f505d76c5f2ccfebc6d71767c2070
     name: clickhouse-server
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/clickhouse-server-1.0.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/clickhouse-server-1.0.1.tgz
     version: 1.0.1
   cluster-mgmt:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.197981405Z"
+    created: "2025-06-09T21:51:22.120938611Z"
     description: A Helm chart for cluster-mgmt service.
-    digest: 5c69d8d387921c26d98743fa42c5fad420d62c154dbdd77e04648d656871724f
+    digest: 64f3251e14a06d100ee8766c7035db281c4bb3df59c837d4acd5f23ca4f149d8
     name: cluster-mgmt
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/cluster-mgmt-1.0.19.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/cluster-mgmt-1.0.19.tgz
     version: 1.0.19
   cpaas-nats:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 2.10.25-alpine
-    created: "2025-05-31T23:29:29.20161597Z"
+    created: "2025-06-09T21:51:22.124592366Z"
     description: A Helm chart for the NATS.io High Speed Cloud Native Distributed
       Communications Technology.
-    digest: 5fe10d05af9e27bd6d7f9674c74b41bd6f4a611af751edac7ea361c29b52015f
+    digest: fe3f5dcfb53eadc732e11bbc6e803aa35a9d627b022e1eac74cb36a5d19e27ac
     home: http://github.com/nats-io/k8s
     icon: https://nats.io/img/nats-icon-color.png
     keywords:
@@ -273,54 +300,66 @@ entries:
       url: https://github.com/caleblloyd
     name: cpaas-nats
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/cpaas-nats-1.0.6.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/cpaas-nats-1.0.6.tgz
     version: 1.0.6
   cpaas-ncm-schema:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 0.1.1
-    created: "2025-05-31T23:29:29.20201152Z"
+    created: "2025-06-09T21:51:22.124977766Z"
     description: A Helm chart for Clickhouse schema migration
-    digest: 74551eb438a17970fc90aa41de6aa984f55de5866c228c1ba181223f7e040332
+    digest: 099b8762a334ff0baa4176ef46adb0a98befc75d704fac1a31593705d3e98988
     name: cpaas-ncm-schema
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/cpaas-ncm-schema-1.0.4.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/cpaas-ncm-schema-1.0.4.tgz
     version: 1.0.4
   dcis:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.20300277Z"
+    created: "2025-06-09T21:51:22.125988255Z"
     description: A Helm chart for config ingestion service in kubernetes
-    digest: ec9d61a832021d0347daee702aad79470cdd6fbc31a97740f7a26c0da467efad
+    digest: 55beb67945ba596172a7819bbd422e5782502df659b5c7382f8235e310ac554e
     maintainers:
     - email: aiops-all@nutanix.com
       name: Aiops Team
     name: dcis
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/dcis-1.0.24.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/dcis-1.0.24.tgz
     version: 1.0.24
   dmis:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.203985842Z"
+    created: "2025-06-09T21:51:22.126934342Z"
     description: A Helm chart for metrics ingestion service in kubernetes
-    digest: b98bd6c01c9da29961209a641b81a543ab765319352db2993bf6d44c426d0398
+    digest: 190e10c61c57e3d4d5205c3c647e4f11355c6afe008feccba398917b84b22ec3
     maintainers:
     - email: aiops-all@nutanix.com
       name: Aiops Team
     name: dmis
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/dmis-1.0.4.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/dmis-1.0.4.tgz
     version: 1.0.4
   dpm:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2025-06-09T21:51:22.127954731Z"
+    description: Helm chart for dpm service
+    digest: 54c36517d592ecb4e0e35c8ea1f6f48eb7162fa95d863ca1c20356308f0bbffd
+    name: dpm
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/dpm-1.0.18.tgz
+    version: 1.0.18
   - annotations:
       appType: Service
     apiVersion: v2
@@ -338,29 +377,29 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 0.1.8
-    created: "2025-05-31T23:29:29.206032767Z"
+    created: "2025-06-09T21:51:22.128860801Z"
     description: A Helm chart for deployment of Ergon containerised image on Kubernetes.
-    digest: bac5313a5ec393204bc4139be6c948e5fba53117530e0a3651d5eba5022850c7
+    digest: 34b9466b3a9f1212e5d347fa47bd189c9b9c8e266ddba3591edb8fdaf25e7ffd
     maintainers:
     - email: ergon-eng@nutanix.com
       name: Ergon Eng Team
     name: ergon
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ergon-0.1.11.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ergon-0.1.11.tgz
     version: 0.1.11
   external-notifications-service:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.9
-    created: "2025-05-31T23:29:29.207002Z"
+    created: "2025-06-09T21:51:22.130763399Z"
     description: A Helm chart for Kubernetes
-    digest: ea8eadc6b7ca79047610a33b9e56e92ae3e4e308f30e4bac9de5a3eb60b3f6cb
+    digest: cf6062f5b86e4c7df79cc794184224afc6eac0c0a4f95e65edf7c6b3f54fa389
     name: external-notifications-service
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/external-notifications-service-1.0.11.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/external-notifications-service-1.0.11.tgz
     version: 1.0.11
   flux:
   - annotations:
@@ -415,13 +454,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 0.0.1736671716
-    created: "2025-05-31T23:29:29.209750014Z"
+    created: "2025-06-09T21:51:22.132179214Z"
     description: A Helm chart for Ikat Proxy and Ikat control plane
-    digest: fb66cdde9d7b8f9b05147bd002bf88f69983a997befffce0e971500f6ad543c9
+    digest: c09d0ff1591068fe157949e4a0c0700dc41a3689cb6747186b365ae1d10c0cfd
     name: ikat
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ikat-0.0.1736671716.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ikat-0.0.1736671716.tgz
     version: 0.0.1736671716
   insights-collector:
   - annotations:
@@ -436,18 +475,30 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/insights-collector-1.0.1.tgz
     version: 1.0.1
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.132883996Z"
+    description: A Helm chart for Insights Collector
+    digest: 321b846efd02dd12aa8b26330e7d417962e5c2a45b33d20700c0f84e27ac1d27
+    name: insights-collector
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/insights-collector-0.1.61.tgz
+    version: 0.1.61
   insights-server-chakr:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.211410254Z"
+    created: "2025-06-09T21:51:22.133747363Z"
     description: Helm Chart for IDF service.
-    digest: f6b405e9b102b351d71c9780d207bd654bbb1fa5e2686e62df8879cc6a587629
+    digest: 40e0ecc768e6862aa7161017e116abe254915e174472eb2d197a40caf1925fca
     name: insights-server-chakr
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/insights-server-chakr-0.0.13.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/insights-server-chakr-0.0.13.tgz
     version: 0.0.13
   k8s-agent:
   - apiVersion: v2
@@ -765,28 +816,28 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 0.0.1737106335
-    created: "2025-05-31T23:29:29.212208969Z"
+    created: "2025-06-09T21:51:22.13452731Z"
     description: A Helm chart for Kubernetes
-    digest: 38ecc794d79cfcdf187b94e7cd3cb66044385f86c7e318737c3cbe3337e6667f
+    digest: 24ded61dbcad74fec22937396261b3dd529b4134ee586b7dd674ee2251e5195a
     name: mercury
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/mercury-0.0.1737106335.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/mercury-0.0.1737106335.tgz
     version: 0.0.1737106335
   msp-prometheus-collector:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.213075581Z"
+    created: "2025-06-09T21:51:22.135328939Z"
     description: A Helm chart for MSP Prometheus Collector service.
-    digest: 33652268182b4f787c65f5ef3ec8a0d8c556527f3731890fadd2f950f55c3a9f
+    digest: 1ad4a65476deda40a9d8216cb485e74c3ac93bd8453f97bd758e208f8a0b4a92
     maintainers:
     - name: Insights, Collector Framework Service (CFS) Team
     name: msp-prometheus-collector
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/msp-prometheus-collector-1.0.4.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/msp-prometheus-collector-1.0.4.tgz
     version: 1.0.4
   native-pc:
   - apiVersion: v2
@@ -844,15 +895,30 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 25.1.23
-    created: "2025-05-31T23:29:29.21377991Z"
+    created: "2025-06-09T21:51:22.136045375Z"
     description: Helm charts for NCM Adonis service.
-    digest: af5699fa6f06fac82a94488d836ed9da543794fef45aed6d51d496d47efc0bf6
+    digest: 7a9fca8a62b69a397e5f6003d46bdd233a44fa734a48a2aac37dc8ae3b6ecee8
     name: ncm-adonis-service
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ncm-adonis-service-25.1.23.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-adonis-service-25.1.23.tgz
     version: 25.1.23
   ncm-backup:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.19
+    created: "2025-06-09T21:51:22.137111416Z"
+    description: A Helm chart for ncm-backup
+    digest: d00084dcaca3b7e1a1da83ddbea8a5d2e13fd3672b314fee01dae4a9aba3dfac
+    maintainers:
+    - email: aiops-all@nutanix.com
+      name: Aiops Team
+    name: ncm-backup
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-backup-1.0.22.tgz
+    version: 1.0.22
   - annotations:
       appType: Service
     apiVersion: v2
@@ -1026,6 +1092,25 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ncm-base-1.0.44.tgz
     version: 1.0.44
   ncm-calm:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.138153502Z"
+    description: Helm Chart for deploying calm service on SMSP cluster.
+    digest: c109263e0d4601c14c69f8a6cb4e557a3b13799d0071569922d8ad3a7f1af287
+    maintainers:
+    - email: raj.panchal@nutanix.com
+      name: Raj Panchal
+    - email: mitesh.madaan@nutanix.com
+      name: Mitesh Madaan
+    - email: akash.kolli@nutanix.com
+      name: Akash Kolli
+    name: ncm-calm
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-calm-1.0.89.tgz
+    version: 1.0.89
   - annotations:
       appType: Service
     apiVersion: v2
@@ -1673,6 +1758,18 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.16.0
+    created: "2025-06-09T21:51:22.138874238Z"
+    description: A Helm chart for Kubernetes
+    digest: 680be9814395c70853231e5fbd90e269e5150a79b409f91cc0b9a026e9b8340a
+    name: ncm-data-processor
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-data-processor-1.0.14.tgz
+    version: 1.0.14
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.16.0
     created: "2025-05-31T23:29:29.278818665Z"
     description: A Helm chart for Kubernetes
     digest: 98f23015835a24c1501f5482d7faf4e9f30ecd1c0bc6ee29c0aaa03a956352ed
@@ -1686,18 +1783,35 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.3
-    created: "2025-05-31T23:29:29.2796409Z"
+    created: "2025-06-09T21:51:22.139596273Z"
     description: A Helm chart for dbal dedupe service in kubernetes
-    digest: 5458e6a9671113d817c11edb9e1f179bf2a910ac32b889ce12b66cbd37be9f2e
+    digest: 6801ac1d5dd909c01644d42ccf0a526e84141a3da19e3fb4119c9cd72099ce2c
     maintainers:
     - email: aiops-all@nutanix.com
       name: Aiops Team
     name: ncm-dbal-dedupe
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ncm-dbal-dedupe-1.0.7.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-dbal-dedupe-1.0.7.tgz
     version: 1.0.7
   ncm-epsilon:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.141715609Z"
+    description: A Helm chart for Kubernetes
+    digest: 8547e360d61559364adee098c55c8866b94d2317d6612052a732df88699e87b3
+    maintainers:
+    - email: raj.panchal@nutanix.com
+      name: Raj Panchal
+    - email: mitesh.madaan@nutanix.com
+      name: Mitesh Madaan
+    name: ncm-epsilon
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-epsilon-2.0.89.tgz
+    version: 2.0.89
   - annotations:
       appType: Service
     apiVersion: v2
@@ -1716,6 +1830,18 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ncm-epsilon-2.0.78.tgz
     version: 2.0.78
   ncm-migration:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.142361771Z"
+    description: A Helm chart for Kubernetes
+    digest: 1820ebe2c9f0bbea30b57e8ba3b1aebc7275cf7eb4f89030425ed5fb8aa1027f
+    name: ncm-migration
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-migration-1.0.19.tgz
+    version: 1.0.19
   - annotations:
       appType: Service
     apiVersion: v2
@@ -1746,6 +1872,21 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.143354839Z"
+    description: Helm Chart for deploying Policy Service on SMSP cluster.
+    digest: f071bc53e6db2acb73d65ca4e46fc461f33cfb9cb726aa6ee182cb20ac07bd3c
+    maintainers:
+    - email: harsha.deshpande@nutanix.com
+      name: Harsha Deshpande
+    name: ncm-policy
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-policy-1.0.85.tgz
+    version: 1.0.85
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-05-31T23:29:29.283360367Z"
     description: Helm Chart for deploying Policy Service on SMSP cluster.
     digest: c02eec23ff51126e3950489cef0bf62175f1d053ed33d82d72c25c5a7eb3f5fa
@@ -1758,6 +1899,18 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ncm-policy-1.0.78.tgz
     version: 1.0.78
   ncm-post-processor:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.16.0
+    created: "2025-06-09T21:51:22.144028291Z"
+    description: A Helm chart for NCM Post Processor
+    digest: 6437ddda150ccb9d36d56c0efcea823e3878d5728189bb8b23cb26d7781ddae4
+    name: ncm-post-processor
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-post-processor-1.0.5.tgz
+    version: 1.0.5
   - annotations:
       appType: Service
     apiVersion: v2
@@ -1775,9 +1928,9 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 0.0.1
-    created: "2025-05-31T23:29:29.28469798Z"
+    created: "2025-06-09T21:51:22.144667903Z"
     description: Helm Chart for deploying postgres service on Minikube or SMSP cluster.
-    digest: c0378d2081044504021cf730609e67aacbb0a6a7614b9207622ad208e807bd9a
+    digest: 2726d849a630ccd700b0414a7828dd8fd2ee5591b3217266896b5dff88f4ce79
     maintainers:
     - email: navtejpreet.singh@nutanix.com
       name: Navtejpreet Singh
@@ -1786,9 +1939,21 @@ entries:
     name: ncm-postgres
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ncm-postgres-1.0.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-postgres-1.0.1.tgz
     version: 1.0.1
   ncm-release-meta:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.145084472Z"
+    description: An Helm chart used for providing NCM release meta resources
+    digest: 0a4b9a86890fc5ee7566cb486c59facfea0595dd42e20fb7a9cacc946416f83f
+    name: ncm-release-meta
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-release-meta-1.5.30.tgz
+    version: 1.5.30
   - annotations:
       appType: Service
     apiVersion: v2
@@ -1926,6 +2091,21 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/ncm-self-service-1.0.17.tgz
     version: 1.0.17
   ncm-tunnel-server:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.145981347Z"
+    description: Helm Chart for deploying NCM Tunnel Server on SMSP cluster.
+    digest: b0667f0dd7f327ce082d1cc3292e4c10e2913841c83222ec375611eecf53f233
+    maintainers:
+    - email: tilak.yedhu@nutanix.com
+      name: Yedhu Tilak P
+    name: ncm-tunnel-server
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/ncm-tunnel-server-1.0.88.tgz
+    version: 1.0.88
   - annotations:
       appType: Service
     apiVersion: v2
@@ -3559,6 +3739,21 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.146947344Z"
+    description: Helm chart for neuron service.
+    digest: 9c92c58a3f36709fe4a76720f07050678bf4022bdf25d1b9c3a85f0bba56f57e
+    maintainers:
+    - email: nitin.kodialbail@nutanix.com
+      name: Neuron Dev Team
+    name: neuron
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/neuron-1.0.16.tgz
+    version: 1.0.16
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-05-31T23:29:29.290518024Z"
     description: Helm chart for neuron service.
     digest: adc88179f93053377629d64acf7a8e3a623be3b96e506edaf8530d0cb0d7c2e2
@@ -3955,13 +4150,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2025-06-07T16:13:23.750472727Z"
+    created: "2025-06-09T21:51:22.147713593Z"
     description: A Helm chart for Kubernetes
-    digest: 360f513940adc87c319f22bdce4b81082ba4bfc7a2a88e3c122eca77470d0109
+    digest: 19747080385425da9367d2da4301313998e5cd03459a105f85a5c25786bcf175
     name: nutanix-infra-data-receiver
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_OutOfBand_Charts/nutanix-infra-data-receiver-1.0.25.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/nutanix-infra-data-receiver-1.0.25.tgz
     version: 1.0.25
   nutanix-k8s-agent:
   - apiVersion: v2
@@ -4068,6 +4263,18 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.148410653Z"
+    description: A Helm chart for onboarding service.
+    digest: 39ce855e396f2d1b49a889474b842d41d7e7bf6d0524d0a9271b48e40d431b6f
+    name: onboarding-svc
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/onboarding-svc-1.0.11.tgz
+    version: 1.0.11
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-05-31T23:29:29.292342491Z"
     description: A Helm chart for onboarding service.
     digest: c1484c2e05f694558989d7adcc9427340f69d4036ec09daeff568a80e3f8a5c7
@@ -4081,13 +4288,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.293128601Z"
+    created: "2025-06-09T21:51:22.149175718Z"
     description: A Helm chart for OpenTelemetry Collector
-    digest: 59e7808aa480ad99fbf493c0d1cc88476fa5aa598a07e817cbfaa5d15d17d192
+    digest: f5089bff27d8b6cac111c521a0216a5187cd3debbfe86cfb8174e03260595a43
     name: otel-collector
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/otel-collector-1.0.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/otel-collector-1.0.1.tgz
     version: 1.0.1
   pc-app-aws:
   - annotations:
@@ -5517,35 +5724,35 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-06-05T04:55:42.011833702Z"
+    created: "2025-06-09T21:51:22.149776371Z"
     description: A Helm chart for node proxy configuration on PC.
-    digest: aa7651e5fbe7804aa84f326ccc075994edeaeff664b450c32bc47de7932425a7
+    digest: 998917e49bfd077bcf596d456a6fdaae7e5e7b0e113ecbf2167a46af3cd086c9
     name: pc-registration-config
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2_Delta1_Charts/pc-registration-config-1.0.2.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/pc-registration-config-1.0.2.tgz
     version: 1.0.2
   reports:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.293884453Z"
+    created: "2025-06-09T21:51:22.174588024Z"
     description: A Helm chart for reporting service.
-    digest: 670456317850d1d5b4561dc08be0538c76d429ed570e692aec0578eddcb2115f
+    digest: f8e2fc7fcae26b3c5cb2e3fea0db695159e900971db21b80c022cba959b7499b
     name: reports
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/reports-1.0.11.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/reports-1.0.11.tgz
     version: 1.0.11
   search:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.294797265Z"
+    created: "2025-06-09T21:51:22.175932929Z"
     description: A Helm chart for Search Service.
-    digest: e32d7ba01bd9f48fb0cfa8624d2ff02443222a4abf498a34bb1d86990fa8b389
+    digest: ff89373b54c4aede52e11cc0d0aa530b230aca51a3b50d275979c3fd782d7905
     maintainers:
     - email: aiops-all@nutanix.com
       name: Aiops Search Team
@@ -5556,9 +5763,26 @@ entries:
     name: search
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/search-1.0.24.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/search-1.0.24.tgz
     version: 1.0.24
   signals-manager:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.1
+    created: "2025-06-09T21:51:22.177029037Z"
+    description: Helm chart for signals-manager service.
+    digest: e47bb73e78d3d30c34546f08675906b0bc7217b69fd58c20a01a5ded0334399c
+    maintainers:
+    - email: harikrishnan.v@nutanix.com
+      name: Signals DEV
+    - email: pratik.satish@nutanix.com
+      name: Pratik Satish
+    name: signals-manager
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/signals-manager-1.0.16.tgz
+    version: 1.0.16
   - annotations:
       appType: Service
     apiVersion: v2
@@ -5581,60 +5805,75 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.29654362Z"
+    created: "2025-06-09T21:51:22.17765962Z"
     description: Helm chart for neuron sizer service.
-    digest: 7644690d7484bda2dff6d2e385f1aedf9082232d6514b53152390d0155d736db
+    digest: a242a5fe6a5ae1fd001e89a2923d869addfdd093647c285f624baa18bc11c4b5
     maintainers:
     - email: gaurav.sharma2@nutanix.com
       name: AIOPS Neuron Dev Team
     name: sizer
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/sizer-1.0.0.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/sizer-1.0.0.tgz
     version: 1.0.0
   smsp-registration-config:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-06-05T04:59:52.109099182Z"
+    created: "2025-06-09T21:51:22.178247017Z"
     description: A Helm chart for node proxy configuration on S-MSP
-    digest: 4d82dc13450dabc1f924b81a0f283b234ab5c9600f56cffce5d1fff28a7f9636
+    digest: 932771a5bb5f89c98c4334298d1c22c4570ed6871f2b02594ebd61e8ab3fd7aa
     name: smsp-registration-config
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC2_Delta2_Charts/smsp-registration-config-1.0.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/smsp-registration-config-1.0.1.tgz
     version: 1.0.1
   sqlserver:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 0.0.1
-    created: "2025-06-07T16:13:23.751574036Z"
+    created: "2025-06-09T21:51:22.179097244Z"
     description: A Helm chart for aiops sqlserver collector
-    digest: 872cf6a8b553b5cbe6fa27b0daa109e46a8eda08cd5c4e0f1f25b3ce2213389a
+    digest: 54b25f766921f686a33fd28845577cacff646225892d81479a91f5865719c2bf
     name: sqlserver
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_OutOfBand_Charts/sqlserver-0.0.29.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/sqlserver-0.0.29.tgz
     version: 0.0.29
   statsgw:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.297485459Z"
+    created: "2025-06-09T21:51:22.180085983Z"
     description: A Helm chart for Stats Gateway Kubernetes
-    digest: 033374b29b4d34f19d78b9e9b07b47f31fa2f977f28bfa936604a7027a20571b
+    digest: 91d9c16d968259ae82a3aad131f53d0844f07dc42633f8d9e4114280d1fc185a
     maintainers:
     - email: aiops-all@nutanix.com
       name: Aiops Team
     name: statsgw
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/statsgw-1.0.18.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/statsgw-1.0.18.tgz
     version: 1.0.18
   uda:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.24
+    created: "2025-06-09T21:51:22.181063523Z"
+    description: Helm chart for uda engine service.
+    digest: afb65cd1f257dbe6fcd4b439dc87a4fd6c1935cc3f04057b7d9d5185f0c58ac9
+    maintainers:
+    - email: harikrishnan.v@nutanix.com
+      name: Signals Dev Team
+    name: uda
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/uda-1.0.25.tgz
+    version: 1.0.25
   - annotations:
       appType: Service
     apiVersion: v2
@@ -5655,31 +5894,43 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 0.0.1
-    created: "2025-06-07T16:13:23.752529796Z"
+    created: "2025-06-09T21:51:22.181878659Z"
     description: A Helm chart for aiops vcenter collector
-    digest: 084def213ea248df5a93a49bb1a3a12028e7043aa4713299c09a8992b67c9cae
+    digest: 97b7a3c459c535414c77b5abbb6680e9b0d92aaa129f17809f010a867e3c4039
     name: vcenter
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_OutOfBand_Charts/vcenter-0.0.29.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/vcenter-0.0.29.tgz
     version: 0.0.29
   vulcan:
   - annotations:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.299198271Z"
+    created: "2025-06-09T21:51:22.182704779Z"
     description: Helm chart for vulcan service.
-    digest: a6274b8d4a3dea5320a8c058acb53c06757dc659676f874db169f783b8ed30a7
+    digest: 913c62e816af847a23618b46f82cb7a74822608d4a04e1ff82b1b10cc4328b2f
     maintainers:
     - email: xplay-dev@nutanix.com
       name: Xplay Dev Team
     name: vulcan
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/vulcan-1.0.9.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/vulcan-1.0.9.tgz
     version: 1.0.9
   zeus-collector:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-06-09T21:51:22.183361719Z"
+    description: A Helm chart for Zeus Collector
+    digest: 62be1ea6960ce95a35f557b41332aeaa521a79bdee1c5e0dbc871e5e13e2a195
+    name: zeus-collector
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zeus-collector-1.0.5.tgz
+    version: 1.0.5
   - annotations:
       appType: Service
     apiVersion: v2
@@ -5697,12 +5948,12 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-31T23:29:29.300451666Z"
+    created: "2025-06-09T21:51:22.183911793Z"
     description: Helm Chart for Zookeeper service.
-    digest: 1340539d9e9ad9561d26dfd2331017860a1ff640506513788b949de207043402
+    digest: d5a246866201de13ccb1fa6928a8799c409903bd830462d139960e1261e39eae
     name: zookeeper
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/zookeeper-0.0.6.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-09T09:43:44.412240836Z"
+generated: "2025-06-09T21:51:22.105130595Z"
