@@ -4393,7 +4393,7 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2025-06-13T00:39:41.069071062Z"
+    created: "2025-06-19T23:08:10.269128707Z"
     dependencies:
     - condition: clustermgmt-nc2.enabled
       name: clustermgmt-nc2
@@ -4404,13 +4404,13 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 7.3.2
     description: An Umbrella Helm chart representing the PC Platform
-    digest: 5e3a2f847d7f41c34a8febaff50a3eda014e6a8da95f7cdca1a966df09288946
+    digest: 6ca1065f35fb0e8cff474821c9d929d9d9a690ef19bfd416ed6caea7c42159c2
     keywords:
     - security-dashboard
     - batch-service
     name: pc-app-aws
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/pc.7.3-rc-3/pc-app-aws-7.3.2.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.7.3-rc-4/pc-app-aws-7.3.2.tgz
     version: 7.3.2
   - annotations:
       appType: Application
@@ -4625,19 +4625,19 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2025-06-13T00:39:41.070177584Z"
+    created: "2025-06-19T23:08:10.270127225Z"
     dependencies:
     - condition: batch-service.enabled
       name: batch-service
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 7.3.2
     description: An Umbrella Helm chart representing the PC Platform
-    digest: ffec09444d9ecdc090b0957c7ad778e4a36258dd5d5533c35497d1564e233418
+    digest: 990ca2dccad945b6577193a63d0bcd183c0b7bdc62bf8b2e60d144d00fda2c87
     keywords:
     - batch-service
     name: pc-app-azure
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/pc.7.3-rc-3/pc-app-azure-7.3.3.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.7.3-rc-4/pc-app-azure-7.3.3.tgz
     version: 7.3.3
   - annotations:
       appType: Application
@@ -4856,7 +4856,7 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    created: "2025-06-13T00:39:41.078451521Z"
+    created: "2025-06-19T23:08:10.27837684Z"
     dependencies:
     - condition: security-dashboard.enabled
       name: security-dashboard
@@ -4903,7 +4903,7 @@ entries:
       - xlarge
       version: 0.1.12
     description: An Umbrella Helm chart representing the PC Platform
-    digest: 25885d501247d5a1ceee92e8ef57e5ade8edb384bba5d241e051d26d2bab73de
+    digest: 67f39d7373ef6f872ef6977211217dc6647477f2acbc3f47a3846ced42139a4b
     keywords:
     - security-dashboard
     - objects-lite
@@ -4916,7 +4916,7 @@ entries:
     - msp-prometheus-collector
     name: pc-app-onprem
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/pc.7.3-rc-3/pc-app-onprem-7.3.34.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/pc.7.3-rc-4/pc-app-onprem-7.3.34.tgz
     version: 7.3.34
   - annotations:
       appType: Application
@@ -6049,4 +6049,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-06-18T07:09:18.934591347Z"
+generated: "2025-06-19T23:08:10.267273002Z"
