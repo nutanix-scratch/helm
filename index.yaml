@@ -2984,6 +2984,16 @@ entries:
     version: 999.999.2108-stg
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-08T14:57:21.373910353Z"
+    description: NCS Installer Agent
+    digest: 60781f7dac1bf678519164dd7d46dae278491edea97af10923c75f86586f09ef
+    name: ncs-installer-agent
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-orch-installer/ncs-installer-agent-1.0.0-2600-stg.tgz
+    version: 1.0.0-2600-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-05-13T08:19:18.463700873Z"
     description: NCS Installer Agent
     digest: 0df97ed52dc69432393c472cb594e4807eeb825a5591c6f616ff6213769f56df
@@ -3718,6 +3728,16 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/dev-test-ncs-helm-charts/ncs-orchestrator-999.999.2108-stg.tgz
     version: 999.999.2108-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-08T14:57:21.419665827Z"
+    description: A Library Helm chart for ncs-orchestrator
+    digest: 6f6d2a5f9e7cdc0e5f0196f0c754206b6c21e5d009d8749782889f19df22e136
+    name: ncs-orchestrator
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-orch-installer/ncs-orchestrator-1.0.0-2600-stg.tgz
+    version: 1.0.0-2600-stg
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-05-13T08:19:18.976876377Z"
@@ -6150,4 +6170,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-07-08T13:14:14.416296748Z"
+generated: "2025-07-08T14:57:21.358913066Z"
