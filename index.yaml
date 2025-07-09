@@ -2830,6 +2830,16 @@ entries:
     version: 1.0.0-671-stg
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-09T05:24:19.737479049Z"
+    description: A Helm chart for ncs-cni
+    digest: 4e3208074da831eec0ea2695c7b7b5515d239817a6e3e0dfa9650c45a9494b8e
+    name: ncs-cni
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cni-helm-727/ncs-cni-0.0.727-stg.tgz
+    version: 0.0.727-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-04-02T16:54:02.61227875Z"
     description: A Helm chart for ncs-cni
     digest: 76476a3c450163ce0867ba83edd858a42a9fd1a41dc91cd35e2670159311a1bf
@@ -6212,4 +6222,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-07-08T15:05:38.68518464Z"
+generated: "2025-07-09T05:24:19.736369023Z"
