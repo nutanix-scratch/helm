@@ -2209,6 +2209,34 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2025-07-09T10:44:37.664055588Z"
+    dependencies:
+    - name: ncs-cluster-operator
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.2301-stg
+    - name: ncs-nxctl
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.1651-stg
+    - name: ncs-metadata-exporter
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.220-stg
+    - name: ncs-collector-chart
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.121-stg
+    description: An Umbrella Helm Chart representing the NCS app
+    digest: bea21537c75cb8db22161e3a35971b15664bfb2fd7bd8c7fffa08b1360ea72c3
+    keywords:
+    - ncs-cluster-operator
+    - ncs-nxctl
+    - ncs-metadata-exporter
+    - ncs-collector-chart
+    name: ncs-app-aws
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-custom-manifest-7423/ncs-app-aws-1.0.0-90725-stg.tgz
+    version: 1.0.0-90725-stg
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2025-07-08T15:05:39.242018742Z"
     dependencies:
     - name: ncs-cluster-operator
@@ -3129,6 +3157,20 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-release-1/ncs-manifest-999.999.5889.tgz
     version: 999.999.5889
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-09T10:44:37.67657175Z"
+    dependencies:
+    - name: ncs-installer-agent
+      repository: https://nutanix-scratch.github.io/helm
+      version: 1.0.0-2600-stg
+    description: A Helm chart for ncs-manifest
+    digest: 8edff39e6049dc7760a1c9cea327083b4dfa16a53f6e64156a0ea75729a58c47
+    name: ncs-manifest
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-custom-manifest-7423/ncs-manifest-1.0.0-90725-stg.tgz
+    version: 1.0.0-90725-stg
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-07-08T15:05:39.254539158Z"
@@ -6236,4 +6278,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-07-09T10:31:21.956781673Z"
+generated: "2025-07-09T10:44:37.110750954Z"
