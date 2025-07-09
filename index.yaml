@@ -2601,6 +2601,20 @@ entries:
   ncs-cluster-operator:
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-09T10:31:21.958508627Z"
+    dependencies:
+    - name: ncs-cni
+      repository: https://nutanix-scratch.github.io/helm
+      version: 999.999.743-stg
+    description: A Helm chart for NCS Cluster Operator
+    digest: 43a95e4b336f5aa3fe40b4dcde5505a4e8c22fb6ba09b308ec8f51b48f22622d
+    name: ncs-cluster-operator
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-custom-operator/ncs-cluster-operator-999.999.2301-stg.tgz
+    version: 999.999.2301-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-07-08T13:14:14.460624843Z"
     dependencies:
     - name: ncs-cni
@@ -6222,4 +6236,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-07-09T05:24:19.736369023Z"
+generated: "2025-07-09T10:31:21.956781673Z"
