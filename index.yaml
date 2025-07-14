@@ -3229,6 +3229,20 @@ entries:
     version: 1.0.0-6300-stg
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-14T15:44:01.926977191Z"
+    dependencies:
+    - name: ncs-installer-agent
+      repository: https://nutanix-scratch.github.io/helm
+      version: 1.0.0-2600-stg
+    description: A Helm chart for ncs-manifest
+    digest: 7376423d00802e2c48bcf85c691f2e2d21854b70614cd121779154a0738eb207
+    name: ncs-manifest
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ncs-1.0.0-140725-stg/ncs-manifest-1.0.0-140725-stg.tgz
+    version: 1.0.0-140725-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-04-01T16:15:04.009235995Z"
     dependencies:
     - name: ncs-installer-agent
@@ -6353,4 +6367,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-07-14T15:21:06.305259508Z"
+generated: "2025-07-14T15:44:01.90833752Z"
