@@ -3567,6 +3567,43 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-ndk-1.2.0-stg-2.tgz
     version: 1.2.0-stg-2
+  - annotations:
+      artifacthub.io/changes: |
+        - Initial release
+      artifacthub.io/containsSecurityUpdates: "true"
+      artifacthub.io/displayName: NDK
+      artifacthub.io/maintainers: |
+        - name: Nutanix Cloud Native Team
+          email: cloudnative@nutanix.com
+    apiVersion: v2
+    appVersion: 1.2.0
+    created: "2025-07-14T14:55:56.039108421Z"
+    description: Helm chart for Nutanix Data Services for Kubernetes (NDK). NDK provides
+      for application-centric data management services for containerized workloads
+      managed by Kubernetes.
+    digest: 546c3445029f53ebd26a67b6f09cf0218ff8ad54324a43d1fb216bd7eb82543d
+    home: https://github.com/nutanix-core/k8s-juno
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    keywords:
+    - Nutanix
+    - Storage
+    - Volumes
+    - Files
+    - StorageClass
+    - RedHat
+    - CentOS
+    - Ubuntu
+    - Snapshot
+    - AppProtection
+    kubeVersion: '>= 1.26.0-0'
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    name: ncs-ndk
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cn-aos-ndk/ncs-ndk-1.2.0-stg.tgz
+    version: 1.2.0-stg
   ncs-nutanix-csi-storage:
   - annotations:
       artifacthub.io/changes: |
@@ -6278,4 +6315,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-07-09T10:44:37.110750954Z"
+generated: "2025-07-14T14:55:56.0270881Z"
