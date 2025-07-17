@@ -880,6 +880,16 @@ entries:
     version: 1.0.0-139
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-17T10:13:42.247706512Z"
+    description: A Helm chart for CN-AOS Control Plane
+    digest: d41f001a0f80b1cd1f2d1022a4d8ea96ebb2da3f593b5345cc396d80776534fc
+    name: native-pc
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cn-aos-7040-helms-1/native-pc-1.0.0-132.tgz
+    version: 1.0.0-132
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-05-13T08:25:39.730195361Z"
     description: A Helm chart for CN-AOS Control Plane
     digest: 603a9da2ac8d155cb3ed3267b4a8cd838dfb47e654bdf2abfe2fa901c3b17f56
@@ -2779,6 +2789,20 @@ entries:
     version: 1.0.0-2313-stg
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-07-17T10:13:42.249480077Z"
+    dependencies:
+    - name: ncs-cni
+      repository: https://nutanix-scratch.github.io/helm
+      version: ~1.0.0-1-stg
+    description: A Helm chart for NCS Cluster Operator
+    digest: e6f34de1ca6a70468a27dd6b084b59dd23b17e639832a91031b8be7f4800bc39
+    name: ncs-cluster-operator
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cn-aos-7040-helms-1/ncs-cluster-operator-1.0.0-2201-stg.tgz
+    version: 1.0.0-2201-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-05-13T08:25:39.73185075Z"
     dependencies:
     - name: ncs-cni
@@ -2924,13 +2948,13 @@ entries:
     version: 1.0.0-747-stg
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-13T08:19:18.448338227Z"
+    created: "2025-07-17T10:13:42.250184375Z"
     description: A Helm chart for ncs-cni
-    digest: 8a63a06e4e7680fe801738b2ecc13f8360c69d82fc010571385e70f271448bfc
+    digest: e28c91ddcfc304bfeb6651e837da6c45e9f0c9996e3a6870a9e3052d3a9b713c
     name: ncs-cni
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/release-helm-1.0.0-6567/ncs-cni-1.0.0-671-stg.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cn-aos-7040-helms-1/ncs-cni-1.0.0-671-stg.tgz
     version: 1.0.0-671-stg
   - apiVersion: v2
     appVersion: 1.0.0
@@ -3015,13 +3039,13 @@ entries:
     version: 999.999.62-stg
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-13T08:19:18.449842157Z"
+    created: "2025-07-17T10:13:42.250704232Z"
     description: A Helm chart for ncs-collector
-    digest: 5cf3af2f08bb1b5719d2869c119e9119313d14095ba0b31a3ad270ee4807a1fa
+    digest: 9ec2db8c73bcd66cda7095ed02048786b31d97123d7be2fe66c652009eb455e4
     name: ncs-collector-chart
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/release-helm-1.0.0-6567/ncs-collector-chart-1.0.0-71-stg.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cn-aos-7040-helms-1/ncs-collector-chart-1.0.0-71-stg.tgz
     version: 1.0.0-71-stg
   - apiVersion: v2
     appVersion: 1.0.0
@@ -3154,6 +3178,16 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/release-orch-installer/ncs-installer-agent-1.0.0-2600-stg.tgz
     version: 1.0.0-2600-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-17T10:13:42.264050345Z"
+    description: NCS Installer Agent
+    digest: c2662e6139082ad2b5980a0be3f7d941761896ff916d9eb09d06067401ccfd86
+    name: ncs-installer-agent
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cn-aos-7040-helms-1/ncs-installer-agent-1.0.0-2532-stg.tgz
+    version: 1.0.0-2532-stg
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-05-13T08:19:18.463700873Z"
@@ -3574,13 +3608,13 @@ entries:
     version: 1.0.0-222-stg
   - apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-05-13T08:19:18.478503903Z"
+    created: "2025-07-17T10:13:42.264756376Z"
     description: A Helm chart for ncs-metadata-exporter
-    digest: 9de6de3fec38fa926b204e04431cefa357124e8b13801935bf23d315992f9b70
+    digest: 792eb7217eb359d4ebce17d83352759c67bb0f06c40c1012efbdadde1032fca3
     name: ncs-metadata-exporter
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/release-helm-1.0.0-6567/ncs-metadata-exporter-1.0.0-147-stg.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cn-aos-7040-helms-1/ncs-metadata-exporter-1.0.0-147-stg.tgz
     version: 1.0.0-147-stg
   - apiVersion: v2
     appVersion: 1.0.0
@@ -3912,6 +3946,16 @@ entries:
     version: 1.0.0-1657-stg
   - apiVersion: v2
     appVersion: v1.0.a1
+    created: "2025-07-17T10:13:42.821539599Z"
+    description: A Helm chart for ncs-nxctl
+    digest: 79fca0f555a4396ef34bfea2a3021fe77f7e8c5324c94c0e0f31fcc4873e85fe
+    name: ncs-nxctl
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cn-aos-7040-helms-1/ncs-nxctl-1.0.0-1574-stg.tgz
+    version: 1.0.0-1574-stg
+  - apiVersion: v2
+    appVersion: v1.0.a1
     created: "2025-05-13T08:19:18.964177573Z"
     description: A Helm chart for ncs-nxctl
     digest: e2aa168104daee111fe34060c445378c90bdb6ff25f2d8fce151a362bd2c3aa1
@@ -4061,6 +4105,16 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/release-orch-installer/ncs-orchestrator-1.0.0-2600-stg.tgz
     version: 1.0.0-2600-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2025-07-17T10:13:42.834886207Z"
+    description: A Library Helm chart for ncs-orchestrator
+    digest: 671db5f826bcefae1534290964d25a1f7d2c85225de6399466901de52ecba6c3
+    name: ncs-orchestrator
+    type: library
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/release-cn-aos-7040-helms-1/ncs-orchestrator-1.0.0-2532-stg.tgz
+    version: 1.0.0-2532-stg
   - apiVersion: v2
     appVersion: 1.0.0
     created: "2025-05-13T08:19:18.976876377Z"
@@ -6493,4 +6547,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-07-16T12:29:48.197526316Z"
+generated: "2025-07-17T10:13:42.170502289Z"
