@@ -5449,6 +5449,71 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2025-08-31T15:28:36.038646593Z"
+    dependencies:
+    - condition: security-dashboard.enabled
+      name: security-dashboard
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.16
+    - condition: objects-lite.enabled
+      name: objects-lite
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.5
+    - condition: marina.enabled
+      name: marina
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.4
+    - condition: licensing-app.enabled
+      name: licensing-app
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.4
+    - condition: batch-service.enabled
+      name: batch-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.4
+    - condition: mitra-service.enabled
+      name: mitra-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.3.1
+    - condition: dlv.enabled
+      name: dlv
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      tags:
+      - small
+      - large
+      - xlarge
+      version: 7.3.8
+    - condition: ikat-alpine.enabled
+      name: ikat-alpine
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.1
+    - condition: msp-prometheus-collector.enabled
+      name: msp-prometheus-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      tags:
+      - small
+      - large
+      - xlarge
+      version: 0.1.12
+    description: An Umbrella Helm chart representing the PC Platform
+    digest: 29e964e47045f5e3236f10817ca4ce9ce515137b014febfd93c89d8ac8f68727
+    keywords:
+    - security-dashboard
+    - objects-lite
+    - marina
+    - licensing-app
+    - batch-service
+    - mitra-service
+    - dlv
+    - ikat-alpine
+    - msp-prometheus-collector
+    name: pc-app-onprem
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ganges-7.3.1-missing-charts/pc-app-onprem-7.3.42.tgz
+    version: 7.3.42
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2025-08-25T16:23:01.540715953Z"
     dependencies:
     - condition: security-dashboard.enabled
@@ -6772,4 +6837,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-08-25T16:23:01.532056526Z"
+generated: "2025-08-31T15:28:36.032104979Z"
