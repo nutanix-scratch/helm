@@ -568,6 +568,59 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2025-10-03T17:42:13.999978134Z"
+    dependencies:
+    - condition: ltss-tools.enabled
+      name: ltss-tools
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    - condition: ltss-zk.enabled
+      name: ltss-zk
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    - condition: ltss-idf-chakr-cm.enabled
+      name: ltss-idf-chakr-cm
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    - condition: ltss-idf-chakr-db.enabled
+      name: ltss-idf-chakr-db
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    - condition: ltss-idf.enabled
+      name: ltss-idf
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    - condition: ltss-chakr-cm.enabled
+      name: ltss-chakr-cm
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    - condition: ltss-chakr-db.enabled
+      name: ltss-chakr-db
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    - condition: ltss-data-svc.enabled
+      name: ltss-data-svc
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    - condition: ltss-janitor-svc.enabled
+      name: ltss-janitor-svc
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    - condition: ltss-ctrl-svc.enabled
+      name: ltss-ctrl-svc
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.4.0
+    description: A Helm chart for Kubernetes
+    digest: a0e249d4ac97d27776e96e1d1ed3b76b2a93931c9ae6b8b6ed11936d77e7ad6b
+    name: ltss
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/ltss-1.4.0-helm-staging/ltss-1.4.0.tgz
+    version: 1.4.0
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-08-25T08:37:43.080884246Z"
     dependencies:
     - condition: ltss-tools.enabled
@@ -7059,4 +7112,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-09-12T20:40:16.611771395Z"
+generated: "2025-10-03T17:42:13.982097274Z"
