@@ -927,7 +927,7 @@ entries:
   nai-core:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-10-22T08:37:49.05896393Z"
+    created: "2025-10-24T07:51:04.894894328Z"
     dependencies:
     - name: oauth2-proxy
       repository: ""
@@ -942,16 +942,16 @@ entries:
       repository: ""
       version: 1.1.1
     description: A Helm chart for NAI core components
-    digest: 7c0ba9870e6c9fa30e15ddad733d7d869259a637096a039c89894eafe7d57c82
+    digest: 35e3d7d6efa41bec3a77a1c4b0fd396a6dfff3dc508b4f1723a2a518e4200550
     name: nai-core
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/nai-2.5.0/nai-core-2.5.0-rc0.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/nai-2.5.0-v2/nai-core-2.5.0-rc0.tgz
     version: 2.5.0-rc0
   nai-operators:
   - apiVersion: v2
     appVersion: 0.1.0
-    created: "2025-10-22T08:37:49.097589892Z"
+    created: "2025-10-24T07:51:04.911686895Z"
     dependencies:
     - name: nai-clickhouse-crd
       repository: ""
@@ -968,11 +968,11 @@ entries:
       repository: ""
       version: 0.0.0-791036aaf751787ed2719050d5086b2ba8642f1a
     description: A Helm chart for CRDs and Operators required by NAI Core
-    digest: 07ebbad1dd3231013299987806d298ffe617e3f082a11fdf0c6a77c1aed516df
+    digest: 420d30e39eb0647fde9a4d4ff5d6a9f96bb1517649030d9fea66f321ca49243a
     name: nai-operators
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/nai-2.5.0/nai-operators-2.5.0-rc0.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/nai-2.5.0-v2/nai-operators-2.5.0-rc0.tgz
     version: 2.5.0-rc0
   native-pc:
   - apiVersion: v2
@@ -7218,4 +7218,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-10-22T08:37:49.037806433Z"
+generated: "2025-10-24T07:51:04.844182878Z"
