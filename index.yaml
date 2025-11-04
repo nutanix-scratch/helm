@@ -5067,6 +5067,17 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/nutanix-central-1.7.0-helm-V1/nutanix-central-1.7.0.tgz
     version: 1.7.0
+  nutanix-core-flow-container-security:
+  - apiVersion: v2
+    appVersion: 1.0.0-staging
+    created: "2025-11-04T08:53:11.038553515Z"
+    description: A Helm chart Flow CNS Kubernetes
+    digest: 3dba3dc644a89233789663e8899fb44aee27134131441c48dc2735d03399df45
+    name: nutanix-core-flow-container-security
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/flow-container-security-1.0.0-helm/nutanix-core-flow-container-security-1.0.0-staging.tgz
+    version: 1.0.0-staging
   nutanix-csi-snapshot:
   - annotations:
       artifacthub.io/changes: |
@@ -7815,4 +7826,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-11-03T03:32:17.560853805Z"
+generated: "2025-11-04T08:53:11.031585732Z"
