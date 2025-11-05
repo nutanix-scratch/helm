@@ -5552,13 +5552,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 7.5.0
-    created: "2025-10-31T17:14:48.956799957Z"
+    created: "2025-11-05T12:32:06.658892111Z"
     description: Helm charts for Nutanix Infrastructure Manager service.
-    digest: 968160c506ded0624585c2e7642ae8c7a311b10bd775f0863e69f64e04ff2081
+    digest: 1dd4cabdc37935360c371e0af347f96fbff0393fdd03a9ee13e8fbd97627541c
     name: nutanix-infrastructure-manager
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-infrastructure-manager-7.5.0/nutanix-infrastructure-manager-7.5.0.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-infrastructure-manager-7.5.0-123e059b006ff33395ef691517f84ccd635f8af7ffb0e50dce27961491fa26b2/nutanix-infrastructure-manager-7.5.0.tgz
     version: 7.5.0
   nutanix-k8s-agent:
   - apiVersion: v2
@@ -7882,4 +7882,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-11-04T22:54:25.207586488Z"
+generated: "2025-11-05T12:32:06.6579253Z"
