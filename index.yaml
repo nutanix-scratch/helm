@@ -1179,7 +1179,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2025-10-03T17:42:13.999978134Z"
+    created: "2025-11-14T06:27:19.011910302Z"
     dependencies:
     - condition: ltss-tools.enabled
       name: ltss-tools
@@ -1222,11 +1222,11 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 1.4.0
     description: A Helm chart for Kubernetes
-    digest: a0e249d4ac97d27776e96e1d1ed3b76b2a93931c9ae6b8b6ed11936d77e7ad6b
+    digest: 51800040a6f4d8858bbc7074e1b2ec81dad5265c1f87c3e15a8e3fdd6a72ab05
     name: ltss
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/ltss-1.4.0-helm-staging/ltss-1.4.0.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/ltss-1.4.0-helm-staging-rc2/ltss-1.4.0.tgz
     version: 1.4.0
   - annotations:
       appType: Application
@@ -8227,4 +8227,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-11-13T05:50:26.394255381Z"
+generated: "2025-11-14T06:27:18.989760414Z"
