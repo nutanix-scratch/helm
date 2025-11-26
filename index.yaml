@@ -5528,9 +5528,9 @@ entries:
         - url: https://artifacthub.io/packages/helm/nutanix/nutanix-csi-snapshot
     apiVersion: v1
     appVersion: 3.3.9
-    created: "2025-11-24T22:35:11.041206199Z"
+    created: "2025-11-26T01:28:13.333601582Z"
     description: Nutanix Container Storage Interface (CSI) Driver
-    digest: cf0ec579e68cdec16263fdce4009115bd6e02957c2f05ddee7437805fcb0f52b
+    digest: 964380fcca63abc9bd311ff3cece222aaf0d33fe05e32fcaa9768d2ab9a127ca
     home: https://github.com/nutanix/helm
     icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
     keywords:
@@ -5549,7 +5549,7 @@ entries:
       name: nutanix-cloud-native-bot
     name: nutanix-csi-storage
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-csi-storage-3.3.9/nutanix-csi-storage-3.3.9.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/3.3.9-release-of-nutanix-csi-storage/nutanix-csi-storage-3.3.9.tgz
     version: 3.3.9
   - annotations:
       artifacthub.io/changes: |
@@ -8438,4 +8438,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-11-24T22:35:11.038627803Z"
+generated: "2025-11-26T01:28:13.329307181Z"
