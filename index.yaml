@@ -1347,6 +1347,25 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ndk-k8s-agent-rc-1/k8s-agent-1.0.363.tgz
     version: 1.0.363
+  konnector-agent:
+  - apiVersion: v2
+    appVersion: 1.3.0
+    created: "2025-12-04T11:12:20.054966346Z"
+    description: A Helm chart for onboarding a Kubernetes cluster created on Nutanix
+      Infrastructure onto Prism Central.
+    digest: e5cb73afc1346fedd34be84f1382376ebd1cad43bac73180d9d6f71e2e05d32f
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    - email: manoj.surudwad@nutanix.com
+      name: manoj-nutanix
+    - email: vijayaraghavan.r@nutanix.com
+      name: vijayaraghavanr31
+    name: konnector-agent
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/konnector-agent/konnector-agent-1.3.0.tgz
+    version: 1.3.0
   ltss:
   - annotations:
       appType: Application
@@ -8438,4 +8457,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2025-12-03T20:27:32.622682659Z"
+generated: "2025-12-04T11:12:20.049449114Z"
