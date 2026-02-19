@@ -886,6 +886,30 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/clickhouse-server-1.0.1.tgz
     version: 1.0.1
+  cloudnative-pg:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.21.4
+    created: "2026-02-19T21:25:28.224002869Z"
+    description: CloudNativePG Helm Chart
+    digest: 8b07fc260ac063805b440c464f4edd33283e5b291211bc05670c032429532d18
+    home: https://cloudnative-pg.io
+    icon: https://raw.githubusercontent.com/cloudnative-pg/artwork/main/cloudnativepg-logo.svg
+    keywords:
+    - postgresql
+    - postgres
+    - database
+    maintainers:
+    - email: p.scorsolini@gmail.com
+      name: phisco
+    name: cloudnative-pg
+    sources:
+    - https://github.com/cloudnative-pg/charts
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/cloudnative-pg-0.19.4.tgz
+    version: 0.19.4
   cluster-mgmt:
   - annotations:
       appType: Service
@@ -1067,6 +1091,18 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part__2/cpaas-common-utilities-job-2.0.3.tgz
     version: 2.0.3
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-19T21:25:28.225104974Z"
+    description: A Helm chart for CPaaS common utilities
+    digest: faf8a4208b1e448b9db400be3ac365b7e80e50897eba0579da65ca3915b2ac2a
+    name: cpaas-common-utilities-job
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/cpaas-common-utilities-job-0.1.4.tgz
+    version: 0.1.4
   cpaas-common-utilities-role:
   - annotations:
       appType: Service
@@ -1080,6 +1116,44 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part__2/cpaas-common-utilities-role-2.0.1.tgz
     version: 2.0.1
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-19T21:25:28.225456665Z"
+    description: A Helm chart for CPaaS common utilities
+    digest: f2bc2901c8d9ffa82a4498a04978f6beb576f2c92d63bfa9ebf55a05b19a0c01
+    name: cpaas-common-utilities-role
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/cpaas-common-utilities-role-0.1.0.tgz
+    version: 0.1.0
+  cpaas-istio:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.16.7
+    created: "2026-02-19T21:25:28.231435519Z"
+    dependencies:
+    - condition: pilot.enabled
+      name: pilot
+      repository: ""
+      version: 1.1.1
+    - condition: gateway.enabled
+      name: gateway
+      repository: ""
+      version: 1.1.2
+    - condition: cpaas-common.enabled
+      name: cpaas-common
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.1
+    description: A Helm chart for CPaaS Istio
+    digest: 0c3540471a2006567e658ee4cd0a6303699c7e215d5ea8adc235371c080f7b52
+    name: cpaas-istio
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/cpaas-istio-1.1.3.tgz
+    version: 1.1.3
   cpaas-nats:
   - annotations:
       appType: Service
@@ -1128,10 +1202,10 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 2.10.29-alpine
-    created: "2026-02-19T03:16:36.165848306Z"
+    created: "2026-02-19T21:25:28.234215089Z"
     description: A Helm chart for the NATS.io High Speed Cloud Native Distributed
       Communications Technology.
-    digest: d15960e780df69059cd5c25bcb838c5ef4f752487de896b8eb6feb36451a8d79
+    digest: f84275df080cc5b9908b359b43717e8fae192030c4cf793101900ad947f8248c
     home: http://github.com/nats-io/k8s
     icon: https://nats.io/img/nats-icon-color.png
     keywords:
@@ -1150,7 +1224,7 @@ entries:
       url: https://github.com/caleblloyd
     name: cpaas-nats-helm
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part__2/cpaas-nats-helm-0.3.9.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/cpaas-nats-helm-0.3.9.tgz
     version: 0.3.9
   cpaas-ncm-schema:
   - annotations:
@@ -3508,7 +3582,78 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/release-native-pc-0.0.204/native-pc-0.0.204.tgz
     version: 0.0.204
+  nc-backup:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-02-19T21:25:28.234990249Z"
+    description: A Helm chart for Kubernetes
+    digest: aca8229989fe4b6b972c33bddc5508c8b14904d6065fc381461b54fdebd01574
+    name: nc-backup
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nc-backup-1.0.0.tgz
+    version: 1.0.0
+  nc-cloudnative-pg-cluster:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 16.0.0
+    created: "2026-02-19T21:25:28.236497895Z"
+    dependencies:
+    - condition: cpaas-common.enabled
+      name: cpaas-common
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.1
+    description: A Helm chart for deploying CloudnativePG cluster for NC
+    digest: 9d0c39319c69ea871615476e2dc6575c71f94ec3cf77377e422dc7c96c0d29a5
+    name: nc-cloudnative-pg-cluster
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nc-cloudnative-pg-cluster-1.0.4.tgz
+    version: 1.0.4
   nc-cpaas:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-19T21:25:28.25119126Z"
+    dependencies:
+    - alias: create-namespace
+      condition: create-namespace.enabled
+      name: nc-onprem-create-namespace
+      repository: file://../create-namespace
+      version: 1.0.0
+    - condition: cpaas-common-utilities-role.enabled
+      name: cpaas-common-utilities-role
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.0
+    - condition: cpaas-common-utilities-job.enabled
+      name: cpaas-common-utilities-job
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.4
+    - condition: cpaas-istio.enabled
+      name: cpaas-istio
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 1.1.3
+    - condition: cloudnative-pg.enabled
+      name: cloudnative-pg
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.19.4
+    description: An Umbrella Helm chart for CPaaS components
+    digest: 523b15b20f31622093ec7883885fc67f4082ecc594877cacd4032ef05089ecc9
+    keywords:
+    - metallb
+    - cpaas-istio
+    - reloader
+    - cloudnative-pg
+    - cpaas-common
+    name: nc-cpaas
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nc-cpaas-1.0.9.tgz
+    version: 1.0.9
   - annotations:
       appType: Application
     apiVersion: v2
@@ -3589,6 +3734,108 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/nutanix-central-1.7.0-helm-V1/nc-cpaas-1.0.3.tgz
     version: 1.0.3
+  nc-onprem:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-19T21:25:28.254353848Z"
+    description: A Helm chart for Kubernetes
+    digest: 49a729d2567cde8462b812ed127c034652db070b6b4b4497fdff2884164989ea
+    name: nc-onprem
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nc-onprem-1.0.0.tgz
+    version: 1.0.0
+  nc-onprem-create-namespace:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-19T21:25:28.254791839Z"
+    description: A Helm chart for Kubernetes
+    digest: a0228246cb3665d2e6901da108a6fd454b2d243f89689e80a406decefa367903
+    name: nc-onprem-create-namespace
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nc-onprem-create-namespace-1.0.0.tgz
+    version: 1.0.0
+  nc-onprem-iamv2:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-19T21:25:28.25872601Z"
+    description: A Helm chart for Kubernetes
+    digest: 4325c13d79bb7a388d360208d64647448b08dbe51a226999bdf254e3040d5394
+    name: nc-onprem-iamv2
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nc-onprem-iamv2-1.0.2.tgz
+    version: 1.0.2
+  nc-onprem-ikathub:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-19T21:25:28.260687944Z"
+    description: A Helm chart for deploying Ikat Hub
+    digest: 351080204cc7ec293de59f84470a85eaf103760b6bcede20fda78f3438e5ab00
+    name: nc-onprem-ikathub
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nc-onprem-ikathub-1.0.1.tgz
+    version: 1.0.1
+  nc-onprem-jobs:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-19T21:25:28.262144516Z"
+    description: A Helm chart for one time jobs required to be run in the cluster
+    digest: b3879418d1b05e4880df38f4a7f05f3cf09acbaf29cc5d4f9fa707518b56a877
+    name: nc-onprem-jobs
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nc-onprem-jobs-1.0.0.tgz
+    version: 1.0.0
+  nc-redis-cluster:
+  - annotations:
+      appType: Service
+      category: Database
+      licenses: Apache-2.0
+    apiVersion: v2
+    appVersion: 7.0.12
+    created: "2026-02-19T21:25:28.312082559Z"
+    dependencies:
+    - name: common
+      repository: oci://registry-1.docker.io/bitnamicharts
+      tags:
+      - bitnami-common
+      version: 2.x.x
+    - condition: cpaas-common.enabled
+      name: cpaas-common
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.1
+    description: Redis(R) is an open source, scalable, distributed in-memory cache
+      for applications. It can be used to store and serve data in the form of strings,
+      hashes, lists, sets and sorted sets.
+    digest: 6179e0e7b46d3aa687be9e633256fc7b9717ceb80f6cf632c341cea34f26993b
+    home: https://bitnami.com
+    icon: https://bitnami.com/assets/stacks/redis/img/redis-stack-220x234.png
+    keywords:
+    - redis
+    - keyvalue
+    - database
+    maintainers:
+    - name: VMware, Inc.
+      url: https://github.com/bitnami/charts
+    name: nc-redis-cluster
+    sources:
+    - https://github.com/bitnami/charts/tree/main/bitnami/redis-cluster
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nc-redis-cluster-8.6.12.tgz
+    version: 8.6.12
   ncm-adonis-service:
   - annotations:
       appType: Service
@@ -7845,6 +8092,82 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-02-19T21:25:28.341401034Z"
+    dependencies:
+    - alias: create-namespace
+      condition: create-namespace.enabled
+      name: nc-onprem-create-namespace
+      repository: file://../create-namespace
+      version: 1.0.0
+    - alias: cpaas-common-utilities-role-nc
+      condition: cpaas-common-utilities-role-nc.enabled
+      name: cpaas-common-utilities-role
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.0
+    - alias: cpaas-common-utilities-job-nc
+      condition: cpaas-common-utilities-job-nc.enabled
+      name: cpaas-common-utilities-job
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.4
+    - condition: nc-redis-cluster.enabled
+      name: nc-redis-cluster
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 8.6.12
+    - condition: nc-cloudnative-pg-cluster.enabled
+      name: nc-cloudnative-pg-cluster
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 1.0.4
+    - alias: iamv2
+      condition: iamv2.enabled
+      name: nc-onprem-iamv2
+      repository: file://../iamv2
+      version: 1.0.2
+    - alias: nc-jobs
+      condition: nc-jobs.enabled
+      name: nc-onprem-jobs
+      repository: file://../nc-jobs
+      version: 1.0.0
+    - alias: secretstore-gen-job
+      condition: secretstore-gen-job.enabled
+      name: nc-onprem-jobs
+      repository: file://../nc-jobs
+      version: 1.0.0
+    - alias: ikathub
+      condition: ikathub.enabled
+      name: nc-onprem-ikathub
+      repository: file://../ikathub
+      version: 1.0.1
+    - alias: nc-services
+      condition: nc-services.enabled
+      name: nc-onprem
+      repository: file://../nc-services
+      version: 1.0.0
+    - condition: cpaas-nats-helm.enabled
+      name: cpaas-nats-helm
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.3.9
+    - condition: nc-backup.enabled
+      name: nc-backup
+      repository: file://../nc-backup
+      version: 1.0.0
+    description: An umbrella Helm chart for deployment of Nutanix Central on-premises
+      components
+    digest: 916095f4080eb25d858ff20299e000ae6a5d36f482b3a69216cf050e245eeaa1
+    keywords:
+    - nc-onprem-iamv2
+    - nc-onprem-jobs
+    - nc-onprem-ikathub
+    - nc-onprem
+    - cpaas-nats-helm
+    name: nutanix-central
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part_1/nutanix-central-2.0.0-24031.tgz
+    version: 2.0.0-24031
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-01-19T13:23:45.269562365Z"
     dependencies:
     - alias: create-namespace
@@ -11431,4 +11754,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-02-19T19:08:52.526913878Z"
+generated: "2026-02-19T21:25:28.214015416Z"
