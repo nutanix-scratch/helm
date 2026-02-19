@@ -1793,6 +1793,18 @@ entries:
   - annotations:
       appType: Service
     apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-19T00:08:02.76772125Z"
+    description: A Helm chart for Ikat Proxy and Ikat control plane
+    digest: e5fa309beedb8a9812a8769870654342960ee30b43e28192f93e8d7102ad2e39
+    name: ikat
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_Part1/ikat-7.5.001.tgz
+    version: 7.5.001
+  - annotations:
+      appType: Service
+    apiVersion: v2
     appVersion: 0.0.1736671716
     created: "2025-06-09T21:51:22.132179214Z"
     description: A Helm chart for Ikat Proxy and Ikat control plane
@@ -9430,4 +9442,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-02-09T05:05:30.929667142Z"
+generated: "2026-02-19T00:08:02.766025441Z"
