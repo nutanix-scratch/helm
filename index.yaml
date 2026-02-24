@@ -8041,6 +8041,19 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ndk-1.3-helm-stg-m12/ndk-1.3.0-9359.tgz
     version: 1.3.0-9359
+  netflow:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2026-02-24T01:05:06.274831936Z"
+    description: A Helm chart for aiops netflow collector
+    digest: 0f79e10d8634270e8db19ac4579af0835737a63b31746aedecf7517d3d20b256
+    name: netflow
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_OOB/netflow-2.0.0.tgz
+    version: 2.0.0
   neuron:
   - annotations:
       appType: Service
@@ -8897,6 +8910,18 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/nutanix-csi-storage-3.0.0-rc7/nutanix-csi-storage-3.0.0-2402.tgz
     version: 3.0.0-2402
   nutanix-infra-data-receiver:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-02-24T01:05:06.276276131Z"
+    description: A Helm chart for Kubernetes
+    digest: 50f93a920392bfec1506a1a68827e1bc68df64b5425321399e06c2bee66a7830
+    name: nutanix-infra-data-receiver
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_OOB/nutanix-infra-data-receiver-2.0.34.tgz
+    version: 2.0.34
   - annotations:
       appType: Service
     apiVersion: v2
@@ -11385,7 +11410,33 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/pc.2022.9-rc-1/pc-app-onprem-2.9.5.tgz
     version: 2.9.5
+  pc-registration-base:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-24T01:05:06.276762454Z"
+    description: A Helm chart for creation of base constructs needed for registration
+      on PC.
+    digest: 0eed143170e6e99221da055d69e1b81457cc523b4bf41c6132b667c400c2e1b5
+    name: pc-registration-base
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_OOB/pc-registration-base-2.0.0.tgz
+    version: 2.0.0
   pc-registration-config:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-24T01:05:06.277609265Z"
+    description: A Helm chart for node proxy configuration on PC.
+    digest: d83385dce9880c51be949f6cfe10b12fd5e41e1dc35527fa1a12a59349611e34
+    name: pc-registration-config
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_OOB/pc-registration-config-2.0.1.tgz
+    version: 2.0.1
   - annotations:
       appType: Service
     apiVersion: v2
@@ -11550,6 +11601,18 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-02-24T01:05:06.27843452Z"
+    description: A Helm chart for node proxy configuration on S-MSP
+    digest: 270c1bf6da42273e7e61f18ad5dd6d79d052111cc59de1538c32007473ba402f
+    name: smsp-registration-config
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_OOB/smsp-registration-config-2.0.1.tgz
+    version: 2.0.1
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-06-09T21:51:22.178247017Z"
     description: A Helm chart for node proxy configuration on S-MSP
     digest: 932771a5bb5f89c98c4334298d1c22c4570ed6871f2b02594ebd61e8ab3fd7aa
@@ -11559,6 +11622,18 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/smsp-registration-config-1.0.1.tgz
     version: 1.0.1
   sqlserver:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2026-02-24T01:05:06.27968546Z"
+    description: A Helm chart for aiops sqlserver collector
+    digest: c51f6d49612f338ae1f3676528a68d378dd42d1cc7bbac17465d6ceef8c998a1
+    name: sqlserver
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_OOB/sqlserver-2.0.5.tgz
+    version: 2.0.5
   - annotations:
       appType: Service
     apiVersion: v2
@@ -11649,6 +11724,18 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC1/uda-1.0.24.tgz
     version: 1.0.24
   vcenter:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 0.0.1
+    created: "2026-02-24T01:05:06.280985777Z"
+    description: A Helm chart for aiops vcenter collector
+    digest: 5685d5b6ddee3bd36a4553aecb289c2d7ad1b104cb735a67dc448d09af887ea0
+    name: vcenter
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_RC4_Charts_OOB/vcenter-2.0.5.tgz
+    version: 2.0.5
   - annotations:
       appType: Service
     apiVersion: v2
@@ -11769,4 +11856,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-02-22T04:42:44.262916111Z"
+generated: "2026-02-24T01:05:06.273508306Z"
