@@ -5,6 +5,61 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-02-26T05:22:11.612689155Z"
+    dependencies:
+    - alias: aiops-cpaas-common-utilities-role
+      condition: aiops-cpaas-common-utilities-role.enabled
+      name: cpaas-common-utilities-role
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.1
+    - condition: aiops-base.enabled
+      name: aiops-base
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.1.13
+    - condition: ncm-platform-objects-lite-sa-buckets.enabled
+      name: ncm-platform-objects-lite-sa-buckets
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.5
+    - condition: vulcan.enabled
+      name: vulcan
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.106
+    - condition: reports.enabled
+      name: reports
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.31
+    - condition: neuron.enabled
+      name: neuron
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.68
+    - condition: uda.enabled
+      name: uda
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.49
+    - condition: sizer.enabled
+      name: sizer
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.3
+    description: An Umbrella Helm chart representing the Intelligent Operation Platform
+    digest: ac0c68b6c3673c2aa03be6c5a727250b66f15077372818737b43ab0eac8e44ce
+    keywords:
+    - aiops-base
+    - vulcan
+    - reports
+    - neuron
+    - uda
+    - sizer
+    - ncm-platform-objects-lite-sa-buckets
+    - aiops-cpaas-common-utilities-role
+    name: aiops
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_charts_aiops/aiops-2.0.93.tgz
+    version: 2.0.93
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-02-22T04:42:44.269530951Z"
     dependencies:
     - alias: aiops-cpaas-common-utilities-role
@@ -12096,4 +12151,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-02-26T03:40:08.119928013Z"
+generated: "2026-02-26T05:22:11.579386476Z"
