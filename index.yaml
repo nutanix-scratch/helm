@@ -4085,6 +4085,73 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-02-26T03:40:08.138183998Z"
+    dependencies:
+    - condition: ncm-common-base.enabled
+      name: ncm-common-base
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.49
+    - condition: altinity-clickhouse-operator.enabled
+      name: altinity-clickhouse-operator
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.2
+    - alias: ncm-common-namespace
+      condition: ncm-common-namespace.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.48
+    - alias: ncm-datastore-namespace
+      condition: ncm-datastore-namespace.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.48
+    - alias: ncm-aiops-namespace
+      condition: ncm-aiops-namespace.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.48
+    - alias: ncm-cg-namespace
+      condition: ncm-cg-namespace.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.48
+    - alias: ncm-self-service-namespace
+      condition: ncm-self-service-namespace.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.48
+    - condition: ncm-release-meta.enabled
+      name: ncm-release-meta
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.281
+    - condition: cpaas-common-utilities-role.enabled
+      name: cpaas-common-utilities-role
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.1
+    - condition: cpaas-valkey-operator.enabled
+      name: cpaas-valkey-operator
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.6
+    description: An Umbrella Helm chart representing the NCM base charts
+    digest: 8bf8a948a8cb0c48a151c8b4a51b76fa6f0892e781f386740a7b2ea48495bd3d
+    keywords:
+    - ncm-common-namespace
+    - ncm-datastore-namespace
+    - ncm-aiops-namespace
+    - ncm-self-service-namespace
+    - ncm-common-base
+    - altinity-clickhouse-operator
+    - cpaas-common-utilities-role
+    - cpaas-valkey-operator
+    name: ncm-base
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_charts_ncm_base/ncm-base-2.0.287.tgz
+    version: 2.0.287
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-02-22T04:42:44.406343366Z"
     dependencies:
     - condition: ncm-common-base.enabled
@@ -12029,4 +12096,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-02-26T01:59:25.498117007Z"
+generated: "2026-02-26T03:40:08.119928013Z"
