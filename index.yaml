@@ -1349,6 +1349,73 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    appVersion: 2.0.1
+    created: "2026-02-27T13:02:04.289187283Z"
+    dependencies:
+    - condition: dl-sync-service.enabled
+      name: dl-sync-service
+      repository: file://../dl-sync-service
+      version: 2.0.1-release.16
+    - condition: dl-dp-ingestion.enabled
+      name: dl-dp-ingestion
+      repository: file://../dl-dp-ingestion
+      version: 2.0.1-release.16
+    - condition: dl-dp-receiver.enabled
+      name: dl-dp-receiver
+      repository: file://../dl-dp-receiver
+      version: 2.0.1-release.16
+    - condition: dl-db-access.enabled
+      name: dl-db-access
+      repository: file://../dl-db-access
+      version: 2.0.1-release.16
+    - condition: dl-react-ui.enabled
+      name: dl-react-ui
+      repository: file://../dl-react-ui
+      version: 2.0.1-release.16
+    - condition: dl-files-processing-svc.enabled
+      name: dl-files-processing-svc
+      repository: file://../dl-files-processing-svc
+      version: 2.0.1-release.16
+    - condition: dl-api-gateway.enabled
+      name: dl-api-gateway
+      repository: file://../dl-api-gateway
+      version: 2.0.1-release.16
+    - condition: dl-job-framework.enabled
+      name: dl-job-framework
+      repository: file://../dl-job-framework
+      version: 2.0.1-release.16
+    - condition: dl-ransomware-protection.enabled
+      name: dl-ransomware-protection
+      repository: file://../dl-ransomware-protection
+      version: 2.0.1-release.16
+    - condition: dl-migration-tool.enabled
+      name: dl-migration-tool
+      repository: file://../dl-migration-tool
+      version: 2.0.1-release.16
+    description: An Umbrella Helm chart representing the Data Lens Application
+    digest: 78f0e7f48a6f320b940573972ce747290d85aec032b9c9d719ec7c1336150ae2
+    keywords:
+    - data-lens
+    - dl-sync-service
+    - dl-dp-ingestion
+    - dl-dp-receiver
+    - dl-files-processing-svc
+    - dl-react-ui
+    - dl-api-gateway
+    - dl-job-framework
+    - dl-ransomware-protection
+    - dl-db-access
+    maintainers:
+    - email: Datalens-Dev@nutanix.com
+      name: Datalens-Dev
+    name: data-lens
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/data-lens-2.0.1-release.999.tgz
+    version: 2.0.1-release.999
+  - annotations:
+      appType: Application
+    apiVersion: v2
     appVersion: 2.0.0
     created: "2026-01-21T21:05:34.566828929Z"
     dependencies:
@@ -1449,6 +1516,32 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-02-27T13:02:04.301895732Z"
+    dependencies:
+    - alias: data-lens-namespace
+      condition: data-lens-namespace.enabled
+      name: dl-namespaces
+      repository: file://../dl-namespaces
+      version: 0.1.0
+    - condition: altinity-clickhouse-operator.enabled
+      name: altinity-clickhouse-operator
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.23.0
+    description: An Umbrella Helm chart containing the DL base charts
+    digest: a6879f1dd202d4f70bd19a448e78f2e50d9a538adfccee797abb94fcb5f7e588
+    keywords:
+    - data-lens
+    - data-lens-namespace
+    - altinity-clickhouse-operator
+    name: dl-base
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/dl-base-2.0.1-release.999.tgz
+    version: 2.0.1-release.999
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-01-21T21:05:34.578798123Z"
     dependencies:
     - alias: data-lens-namespace
@@ -1472,6 +1565,62 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NDL-2.0.0/dl-base-2.0.0-release.999.tgz
     version: 2.0.0-release.999
   dl-common:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-27T13:02:04.3106437Z"
+    dependencies:
+    - condition: dl-common-config.enabled
+      name: dl-common-config
+      repository: file://../dl-common-config
+      version: 0.1.0
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.7
+    - condition: cpaas-nats-helm.enabled
+      name: cpaas-nats-helm
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.4.0
+    - condition: cpaas-nats-entities.enabled
+      name: cpaas-nats-entities
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.10.0
+    - condition: clickhouse-keeper.enabled
+      name: clickhouse-keeper
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.13.3
+    - condition: clickhouse-server.enabled
+      name: clickhouse-server
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.3.0
+    - condition: ikat.enabled
+      name: ikat
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.5.001
+    - condition: msp-prometheus-collector.enabled
+      name: msp-prometheus-collector
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.6
+    description: An Umbrella Helm chart representing the DataLens Common Services
+    digest: fcfe39294738b04b3e43c0637087f6c25cc13e86dc33c8660974aafa24c4b134
+    keywords:
+    - dl-common
+    - dl-common-config
+    - zookeeper
+    - cpaas-nats
+    - clickhouse-server
+    - ikat
+    - msp-prometheus-collector
+    maintainers:
+    - email: Datalens-Dev@nutanix.com
+      name: Datalens-Dev
+    name: dl-common
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/dl-common-2.0.1-release.999.tgz
+    version: 2.0.1-release.999
   - annotations:
       appType: Application
     apiVersion: v2
@@ -1533,6 +1682,18 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-02-27T13:02:04.311304108Z"
+    description: A Helm chart for node proxy configuration on PC.
+    digest: f611eb25ba0141973150a39fed0429e436d4b27d4fd909a062fa38bb4d24d1cb
+    name: dl-pc-registration-config
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/dl-pc-registration-config-2.0.1-release.999.tgz
+    version: 2.0.1-release.999
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-01-21T21:05:34.621166523Z"
     description: A Helm chart for node proxy configuration on PC.
     digest: eacb3629c98e526a949d60e0c846c65cb07ba7ea8c062e580a2dce8e33f31316
@@ -1542,6 +1703,18 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NDL-2.0.0/dl-pc-registration-config-2.0.0-release.999.tgz
     version: 2.0.0-release.999
   dl-smsp-registration-config:
+  - annotations:
+      appType: Service
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-02-27T13:02:04.311838392Z"
+    description: A Helm chart for node proxy configuration on S-MSP
+    digest: 4be9959a269f70434673c8a037c3455aec9bb3128aeaefe91682dbab5dc2a7cb
+    name: dl-smsp-registration-config
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/dl-smsp-registration-config-2.0.1-release.999.tgz
+    version: 2.0.1-release.999
   - annotations:
       appType: Service
     apiVersion: v2
@@ -12245,4 +12418,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-02-27T04:37:12.20853237Z"
+generated: "2026-02-27T13:02:04.282933985Z"
