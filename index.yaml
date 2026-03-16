@@ -1350,50 +1350,50 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 2.0.1
-    created: "2026-02-27T13:02:04.289187283Z"
+    created: "2026-03-16T18:50:41.510399909Z"
     dependencies:
     - condition: dl-sync-service.enabled
       name: dl-sync-service
       repository: file://../dl-sync-service
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     - condition: dl-dp-ingestion.enabled
       name: dl-dp-ingestion
       repository: file://../dl-dp-ingestion
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     - condition: dl-dp-receiver.enabled
       name: dl-dp-receiver
       repository: file://../dl-dp-receiver
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     - condition: dl-db-access.enabled
       name: dl-db-access
       repository: file://../dl-db-access
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     - condition: dl-react-ui.enabled
       name: dl-react-ui
       repository: file://../dl-react-ui
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     - condition: dl-files-processing-svc.enabled
       name: dl-files-processing-svc
       repository: file://../dl-files-processing-svc
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     - condition: dl-api-gateway.enabled
       name: dl-api-gateway
       repository: file://../dl-api-gateway
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     - condition: dl-job-framework.enabled
       name: dl-job-framework
       repository: file://../dl-job-framework
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     - condition: dl-ransomware-protection.enabled
       name: dl-ransomware-protection
       repository: file://../dl-ransomware-protection
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     - condition: dl-migration-tool.enabled
       name: dl-migration-tool
       repository: file://../dl-migration-tool
-      version: 2.0.1-release.16
+      version: 2.0.1-release.18
     description: An Umbrella Helm chart representing the Data Lens Application
-    digest: 78f0e7f48a6f320b940573972ce747290d85aec032b9c9d719ec7c1336150ae2
+    digest: 8f1b901fb3908edd7a73aec556d40cd03d0e6a96038fa45c89757bacb8834176
     keywords:
     - data-lens
     - dl-sync-service
@@ -1411,7 +1411,7 @@ entries:
     name: data-lens
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/data-lens-2.0.1-release.999.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/dl-onprem-2.0.1/data-lens-2.0.1-release.999.tgz
     version: 2.0.1-release.999
   - annotations:
       appType: Application
@@ -1516,7 +1516,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-02-27T13:02:04.301895732Z"
+    created: "2026-03-16T18:50:41.524180152Z"
     dependencies:
     - alias: data-lens-namespace
       condition: data-lens-namespace.enabled
@@ -1528,7 +1528,7 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 0.23.0
     description: An Umbrella Helm chart containing the DL base charts
-    digest: a6879f1dd202d4f70bd19a448e78f2e50d9a538adfccee797abb94fcb5f7e588
+    digest: 99183622cc050165b65569e806f73b6d541d792e57a30a2c3f89065dca796d8a
     keywords:
     - data-lens
     - data-lens-namespace
@@ -1536,7 +1536,7 @@ entries:
     name: dl-base
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/dl-base-2.0.1-release.999.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/dl-onprem-2.0.1/dl-base-2.0.1-release.999.tgz
     version: 2.0.1-release.999
   - annotations:
       appType: Application
@@ -1569,7 +1569,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-02-27T13:02:04.3106437Z"
+    created: "2026-03-16T18:50:41.532755411Z"
     dependencies:
     - condition: dl-common-config.enabled
       name: dl-common-config
@@ -1604,7 +1604,7 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 2.0.6
     description: An Umbrella Helm chart representing the DataLens Common Services
-    digest: fcfe39294738b04b3e43c0637087f6c25cc13e86dc33c8660974aafa24c4b134
+    digest: d97f941f555128d8ae575ee8fa61f9c9c9828b71188af5f8bf2bd70d7f44ad44
     keywords:
     - dl-common
     - dl-common-config
@@ -1619,7 +1619,7 @@ entries:
     name: dl-common
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/dl-common-2.0.1-release.999.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/dl-onprem-2.0.1/dl-common-2.0.1-release.999.tgz
     version: 2.0.1-release.999
   - annotations:
       appType: Application
@@ -1682,13 +1682,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-02-27T13:02:04.311304108Z"
+    created: "2026-03-16T18:50:41.533391604Z"
     description: A Helm chart for node proxy configuration on PC.
-    digest: f611eb25ba0141973150a39fed0429e436d4b27d4fd909a062fa38bb4d24d1cb
+    digest: 6236f8bbfe60a93a9c2364db72b495619b3cca288eac4da50949c855cb8cb7cd
     name: dl-pc-registration-config
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/dl-pc-registration-config-2.0.1-release.999.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/dl-onprem-2.0.1/dl-pc-registration-config-2.0.1-release.999.tgz
     version: 2.0.1-release.999
   - annotations:
       appType: Service
@@ -1707,13 +1707,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-02-27T13:02:04.311838392Z"
+    created: "2026-03-16T18:50:41.533911591Z"
     description: A Helm chart for node proxy configuration on S-MSP
-    digest: 4be9959a269f70434673c8a037c3455aec9bb3128aeaefe91682dbab5dc2a7cb
+    digest: 19ccba04135b22e5f2c45a83e470150f2fa69ba6380b318c535f324224c703f0
     name: dl-smsp-registration-config
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/2.0.1-release.999/dl-smsp-registration-config-2.0.1-release.999.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/dl-onprem-2.0.1/dl-smsp-registration-config-2.0.1-release.999.tgz
     version: 2.0.1-release.999
   - annotations:
       appType: Service
@@ -12483,4 +12483,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-03-11T16:38:11.10504412Z"
+generated: "2026-03-16T18:50:41.504280453Z"
