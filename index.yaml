@@ -3325,6 +3325,25 @@ entries:
     version: 1.0.363
   konnector-agent:
   - apiVersion: v2
+    appVersion: 1.4.0-rc.3
+    created: "2026-05-05T07:20:46.153424229Z"
+    description: A Helm chart for onboarding a Kubernetes cluster created on Nutanix
+      Infrastructure onto Prism Central.
+    digest: 374be0a647b471f0d5bc89ce2d2ecef7aff07d2debc894095574010bb65096a7
+    icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
+    maintainers:
+    - email: cloudnative@nutanix.com
+      name: nutanix-cloud-native-bot
+    - email: manoj.surudwad@nutanix.com
+      name: manoj-nutanix
+    - email: vijayaraghavan.r@nutanix.com
+      name: vijayaraghavanr31
+    name: konnector-agent
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/konnector-agent-1.4.0-rc.3/konnector-agent-1.4.0-rc.3.tgz
+    version: 1.4.0-rc.3
+  - apiVersion: v2
     appVersion: 1.4.0-rc.2
     created: "2026-04-17T09:12:52.087242164Z"
     description: A Helm chart for onboarding a Kubernetes cluster created on Nutanix
@@ -12619,4 +12638,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-05-01T12:18:34.126378441Z"
+generated: "2026-05-05T07:20:46.148685328Z"
