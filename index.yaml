@@ -1018,6 +1018,39 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/cluster-mgmt-1.0.19.tgz
     version: 1.0.19
+  cnaos-host-manager:
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-05-20T19:23:25.453340327Z"
+    description: A Helm chart for CN-AOS Host Manager
+    digest: 7476765882f88ca4d08814451db79acbcce09bfcc686be053646112ba752646e
+    name: cnaos-host-manager
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/cnaos-110-stage-1/cnaos-host-manager-1.1.0-309-stg.tgz
+    version: 1.1.0-309-stg
+  cnaos-lvm-vg-operator:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-05-20T19:23:25.454182557Z"
+    description: A Helm chart for Kubernetes
+    digest: 786b2f7303e0bd04d1c3c202f2ac3664291c4f6ba08db3c31019d0b206e6b717
+    name: cnaos-lvm-vg-operator
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/cnaos-110-stage-1/cnaos-lvm-vg-operator-1.1.0-132-stg.tgz
+    version: 1.1.0-132-stg
+  cnaos-pvc-populator:
+  - apiVersion: v2
+    appVersion: 1.1.0-174-5f7756fbf57a7b6a939a6159c4c82eee3a9f62d2
+    created: "2026-05-20T19:23:25.454953511Z"
+    description: A Helm chart for Kubernetes
+    digest: 0f8da307fb75ee10c29e763c3045ae4fa2b704db97e8742815ec8a74d32957fe
+    name: cnaos-pvc-populator
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/cnaos-110-stage-1/cnaos-pvc-populator-1.1.0-174-stg.tgz
+    version: 1.1.0-174-stg
   common-auth-service:
   - annotations:
       appType: Service
@@ -7184,6 +7217,16 @@ entries:
     version: 999.999.2035-stg
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-05-20T19:23:25.456208224Z"
+    description: A Helm chart for CN-AOS Cluster Operator
+    digest: 84d0e0dc6588b8954cee7157e84b616770462982d59a89111ee52d92d7946756
+    name: ncs-cluster-operator
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/cnaos-110-stage-1/ncs-cluster-operator-1.1.0-3566-stg.tgz
+    version: 1.1.0-3566-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-07-16T11:58:51.600136443Z"
     dependencies:
     - name: ncs-cni
@@ -7347,6 +7390,16 @@ entries:
     version: 999.999.658-stg
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-05-20T19:23:25.456986435Z"
+    description: A Helm chart for Container Network Interface (CNI) plugin for CN-AOS
+    digest: babf5ea66ca3228929f0c9930f763ff0c442599638f7bc25a6d3240552b7f2fe
+    name: ncs-cni
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/cnaos-110-stage-1/ncs-cni-1.1.0-1198-stg.tgz
+    version: 1.1.0-1198-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-07-16T12:05:32.713639085Z"
     description: A Helm chart for ncs-cni
     digest: 9f91e49370d4787e6640656526c6290082e803cb62e5d26b13c033c501ed2465
@@ -7486,6 +7539,17 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-manifest-.0.0.5897-helm-staging-release/ncs-collector-chart-0.0.61-stg.tgz
     version: 0.0.61-stg
+  ncs-control-plane-operator:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-05-20T19:23:25.457810283Z"
+    description: A Helm chart for Kubernetes
+    digest: 938694abef55246578b5ef21abc47e6d62f8d91b4291f073c2b05d583c24d185
+    name: ncs-control-plane-operator
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/cnaos-110-stage-1/ncs-control-plane-operator-1.1.0-1139-stg.tgz
+    version: 1.1.0-1139-stg
   ncs-installer-agent:
   - apiVersion: v2
     appVersion: 1.0.0
@@ -8021,6 +8085,16 @@ entries:
     version: 999.999.129-stg
   - apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-05-20T19:23:25.458720518Z"
+    description: A Helm chart for CN-AOS Metadata Exporter
+    digest: b0873218cb5fa12a3dfa0f3b0531ba4d706731e14dcc95eb6c40df91a52d1fbe
+    name: ncs-metadata-exporter
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/cnaos-110-stage-1/ncs-metadata-exporter-1.1.0-274-stg.tgz
+    version: 1.1.0-274-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
     created: "2025-07-16T12:05:32.715219785Z"
     description: A Helm chart for ncs-metadata-exporter
     digest: 3a1774a672637c328921b692b4dde21977b998a523193de4a798cc3b6f9d7d0a
@@ -8357,6 +8431,16 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ncs-helm-release-1/ncs-nxctl-999.999.1176-stg.tgz
     version: 999.999.1176-stg
+  - apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-05-20T19:23:25.459528403Z"
+    description: A Helm chart for CN-AOS NXCTL service
+    digest: 652a84d1c9940913e80a3cc9afc9f9a44755e643edbd6436142c48bd59a25c7a
+    name: ncs-nxctl
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/cnaos-110-stage-1/ncs-nxctl-1.1.0-2171-stg.tgz
+    version: 1.1.0-2171-stg
   - apiVersion: v2
     appVersion: v1.0.a1
     created: "2025-07-16T11:58:52.14746751Z"
@@ -12717,4 +12801,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-05-19T00:42:55.715464453Z"
+generated: "2026-05-20T19:23:25.452338155Z"
