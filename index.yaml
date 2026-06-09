@@ -8972,11 +8972,11 @@ entries:
           email: cloudnative@nutanix.com
     apiVersion: v2
     appVersion: 2.2.0
-    created: "2026-06-09T01:38:31.266775527Z"
+    created: "2026-06-09T21:08:42.382791077Z"
     description: Helm chart for Nutanix Data Services for Kubernetes (NDK). NDK provides
       for application-centric data management services for containerized workloads
       managed by Kubernetes.
-    digest: 483d69db0be83bd986fc402a8e20e33382ccc1afd31710d517ab19f699749086
+    digest: a41ce9e5458d220eaa2192e1965e9751c3c28fefdcadc5753f61ed46711b150b
     home: https://github.com/nutanix-core/k8s-juno
     icon: https://avatars2.githubusercontent.com/u/6165865?s=200&v=4
     keywords:
@@ -8997,7 +8997,7 @@ entries:
     name: ndk
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/ndk-2.2.0-helm/ndk-2.2.0.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/ndk-2.2.0-helm-chart/ndk-2.2.0.tgz
     version: 2.2.0
   - annotations:
       artifacthub.io/changes: |
@@ -13117,4 +13117,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-06-09T01:38:31.263646838Z"
+generated: "2026-06-09T21:08:42.369851352Z"
