@@ -4527,7 +4527,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-11T07:13:30.164954064Z"
+    created: "2026-06-11T08:08:01.363846637Z"
     dependencies:
     - alias: create-namespace
       condition: create-namespace.enabled
@@ -4551,7 +4551,7 @@ entries:
       repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
       version: 0.19.4
     description: An Umbrella Helm chart for CPaaS components
-    digest: 740d33cea2d1c998d0f8d8865ff1496f7d671d1ae94aea249dad5669fc250d27
+    digest: ea3de92bee57c8ce34178551a8d3ca4b431d1704e00dd1be7ff20f262e7926fb
     keywords:
     - metallb
     - cpaas-istio
@@ -4561,7 +4561,7 @@ entries:
     name: nc-cpaas
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.1_Release_Charts/nc-cpaas-1.0.9.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.1_Release_Charts_v2/nc-cpaas-1.0.9.tgz
     version: 1.0.9
   - annotations:
       appType: Application
@@ -9248,7 +9248,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-11T07:13:30.189789794Z"
+    created: "2026-06-11T08:08:01.391082344Z"
     dependencies:
     - alias: create-namespace
       condition: create-namespace.enabled
@@ -9308,7 +9308,7 @@ entries:
       version: 1.0.0
     description: An umbrella Helm chart for deployment of Nutanix Central on-premises
       components
-    digest: 51670b105a876f141fcfbf3af2f2c15d5c2030d92d65c44ce77e31cfa23120c1
+    digest: 217207f654e1400b915a38d50a9573679e0925480e3862fb0fc4d143a020f630
     keywords:
     - nc-onprem-iamv2
     - nc-onprem-jobs
@@ -9318,7 +9318,7 @@ entries:
     name: nutanix-central
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.1_Release_Charts/nutanix-central-2.0.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.1_Release_Charts_v2/nutanix-central-2.0.1.tgz
     version: 2.0.1
   - annotations:
       appType: Application
@@ -13193,4 +13193,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-06-11T07:13:30.130637316Z"
+generated: "2026-06-11T08:08:01.32224432Z"
