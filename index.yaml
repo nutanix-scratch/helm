@@ -10496,6 +10496,18 @@ entries:
   - annotations:
       appType: Service
     apiVersion: v2
+    appVersion: 7.6.0
+    created: "2026-06-16T08:29:28.666248759Z"
+    description: Helm charts for Nutanix Infrastructure Manager application.
+    digest: bd02478246f0722eecf09eeb4c54ed492c66f0e8d9f8314041b720d7d7c4f93d
+    name: nutanix-infrastructure-manager
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-core-pc-nim-umbrella-7.6.0-55dcb372fdf5483c59dc23e53f4dcee939df3920c89f635362b512e425f60c4/nutanix-infrastructure-manager-7.6.0.tgz
+    version: 7.6.0
+  - annotations:
+      appType: Service
+    apiVersion: v2
     appVersion: 7.5.0
     created: "2025-11-05T12:32:06.658892111Z"
     description: Helm charts for Nutanix Infrastructure Manager service.
@@ -13709,4 +13721,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-06-15T16:09:37.322070703Z"
+generated: "2026-06-16T08:29:28.665381718Z"
