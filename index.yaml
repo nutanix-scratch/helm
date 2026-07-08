@@ -3478,8 +3478,8 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
-    appVersion: 7.5.900-b7da639
-    created: "2026-07-08T05:34:11.170357224Z"
+    appVersion: 7.5.900-e54f25f
+    created: "2026-07-08T17:23:11.767661928Z"
     dependencies:
     - condition: zookeeper.enabled
       name: zookeeper
@@ -3535,7 +3535,7 @@ entries:
       version: 2.1.7
     description: 'An Umbrella Helm chart for Flow data services including databases,
       message queues, and data processing services. '
-    digest: 78ea0d5ed76603b12aeb9b5b2a07dd6c677882fb5be64452ea83e9c106ab9e84
+    digest: 6aa70524b6d0d038a16dc9b5b08b3ce6bab82d1d88694b1f10ddc66a561377a6
     keywords:
     - zookeeper
     - chakr-db-ext4
@@ -3555,7 +3555,7 @@ entries:
     name: flow-data-services
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/flow-controller-7.6.0-e69f0fd3355410141398b522b3df29f0674bde6b/flow-data-services-1.0.21.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/flow-controller-7.6.0-e69f0fd3355410141398b522b3df29f0674bde6b-2/flow-data-services-1.0.21.tgz
     version: 1.0.21
   - annotations:
       appType: Application
@@ -14693,4 +14693,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-07-08T05:41:24.269925847Z"
+generated: "2026-07-08T17:23:11.734393019Z"
