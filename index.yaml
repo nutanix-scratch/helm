@@ -4002,6 +4002,77 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    appVersion: 7.6.0-3dea660
+    created: "2026-07-14T20:42:38.598173191Z"
+    dependencies:
+    - condition: mercury.enabled
+      name: mercury
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 7.7.4
+    - condition: atlas.enabled
+      name: atlas
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.4
+    - condition: flow-schemas.enabled
+      name: flow-schemas
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.2
+    - condition: kratos.enabled
+      name: kratos
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.5
+    - condition: salus.enabled
+      name: salus
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.1
+    - condition: api-artifacts-volume.enabled
+      name: api-artifacts-volume
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.2
+    - condition: flow-api-artifacts-service.enabled
+      name: flow-api-artifacts-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.16
+    - condition: flow-adonis-service.enabled
+      name: flow-adonis-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.19
+    - condition: flow-network-ingestion-service.enabled
+      name: flow-network-ingestion-service
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.0
+    - condition: artemis.enabled
+      name: artemis
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.1
+    - condition: ncm-post-processor.enabled
+      name: ncm-post-processor
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.2
+    description: 'An Umbrella Helm chart representing the Flow application services. '
+    digest: 488a0156e08e27d3dfb27da13d7ea4faa4b5f97d315bb1d083511107b8ececdf
+    keywords:
+    - mercury
+    - atlas
+    - flow-schemas
+    - kratos
+    - salus
+    - api-artifacts-volume
+    - flow-api-artifacts-service
+    - flow-adonis-service
+    - flow-network-ingestion-service
+    - artemis
+    - ncm-post-processor
+    maintainers:
+    - name: Flow Team
+    name: flow-services
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/flow-controller-7.6.0-3dea660864715ff78496ce2a9ae6b1436adbbeb0/flow-services-1.1.84.tgz
+    version: 1.1.84
+  - annotations:
+      appType: Application
+    apiVersion: v2
     appVersion: 7.5.900-07e8450
     created: "2026-07-09T15:12:05.128793358Z"
     dependencies:
@@ -15061,4 +15132,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-07-14T20:13:06.638805082Z"
+generated: "2026-07-14T20:42:38.59206198Z"
