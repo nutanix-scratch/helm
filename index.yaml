@@ -11635,6 +11635,29 @@ entries:
     version: 3.0.0-2402
   nutanix-flow-cni:
   - apiVersion: v2
+    appVersion: 1.1.0-rc4
+    created: "2026-07-21T16:21:40.48373237Z"
+    dependencies:
+    - name: nutanix-core-flow-ovn-kubernetes
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm
+      version: 1.1.0-rc3
+    - condition: nats.enabled
+      name: nats
+      repository: https://nats-io.github.io/k8s/helm/charts/
+      version: 1.1.5
+    - condition: flowProcessor.enabled
+      name: nutanix-core-flow-container-security
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm
+      version: 1.1.0-226
+    description: A Helm chart for Flow CNI
+    digest: 0464e69b0f74e221a30fbfb86bf37e7902ad78363fa780e156adccd69bb6a2c8
+    kubeVersion: '>= 1.28.0'
+    name: nutanix-flow-cni
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-flow-cni-1.1.0-rc4/nutanix-flow-cni-1.1.0-rc4.tgz
+    version: 1.1.0-rc4
+  - apiVersion: v2
     appVersion: 1.1.0-rc3
     created: "2026-07-07T05:13:46.990348051Z"
     dependencies:
@@ -15579,4 +15602,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-07-20T23:00:46.186344352Z"
+generated: "2026-07-21T16:21:40.472459312Z"
