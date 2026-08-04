@@ -6290,7 +6290,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-06-11T08:08:01.363846637Z"
+    created: "2026-08-04T04:42:06.919071184Z"
     dependencies:
     - alias: create-namespace
       condition: create-namespace.enabled
@@ -6314,7 +6314,7 @@ entries:
       repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
       version: 0.19.4
     description: An Umbrella Helm chart for CPaaS components
-    digest: ea3de92bee57c8ce34178551a8d3ca4b431d1704e00dd1be7ff20f262e7926fb
+    digest: 65ad976e3aed526329822deb56a4e9a07c2685dcda165f9870a6f91dd97b5955
     keywords:
     - metallb
     - cpaas-istio
@@ -6324,7 +6324,7 @@ entries:
     name: nc-cpaas
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.1_Release_Charts_v2/nc-cpaas-1.0.9.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.2_Release_Charts_Final/nc-cpaas-1.0.9.tgz
     version: 1.0.9
   - annotations:
       appType: Application
@@ -11354,7 +11354,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-07-29T16:52:34.603070518Z"
+    created: "2026-08-04T04:42:06.945262695Z"
     dependencies:
     - alias: create-namespace
       condition: create-namespace.enabled
@@ -11374,7 +11374,7 @@ entries:
     - condition: nc-redis-cluster.enabled
       name: nc-redis-cluster
       repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
-      version: 8.6.12
+      version: 8.6.13
     - condition: nc-cloudnative-pg-cluster.enabled
       name: nc-cloudnative-pg-cluster
       repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
@@ -11414,7 +11414,7 @@ entries:
       version: 1.0.0
     description: An umbrella Helm chart for deployment of Nutanix Central on-premises
       components
-    digest: 28da068eb9a6f2d1e6ba06ee8898db01b75f1868b9360b62ff9326164b2bd457
+    digest: 211617f293a0b5a8478314ad70ece6db6172c07104ad43ed075d0a74aeb86f39
     keywords:
     - nc-onprem-iamv2
     - nc-onprem-jobs
@@ -11424,7 +11424,7 @@ entries:
     name: nutanix-central
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.2_Release_Charts/nutanix-central-2.0.2.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.2_Release_Charts_Final/nutanix-central-2.0.2.tgz
     version: 2.0.2
   - annotations:
       appType: Application
@@ -16550,4 +16550,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-02T17:58:39.98915514Z"
+generated: "2026-08-04T04:42:06.87380549Z"
