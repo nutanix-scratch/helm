@@ -5,6 +5,81 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-08-11T18:09:47.743097299Z"
+    dependencies:
+    - alias: aiops-cpaas-common-utilities-role
+      condition: aiops-cpaas-common-utilities-role.enabled
+      name: cpaas-common-utilities-role
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.0
+    - condition: aiops-base.enabled
+      name: aiops-base
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.16
+    - condition: ncm-platform-objects-lite-sa-buckets.enabled
+      name: ncm-platform-objects-lite-sa-buckets
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.0
+    - condition: dashboards.enabled
+      name: dashboards
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.32
+    - condition: vulcan.enabled
+      name: vulcan
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.19
+    - condition: reports.enabled
+      name: reports
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.23
+    - condition: neuron.enabled
+      name: neuron
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.70
+    - condition: uda.enabled
+      name: uda
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.29
+    - condition: sizer.enabled
+      name: sizer
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.4
+    - condition: api-artifacts-volume.enabled
+      name: api-artifacts-volume
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.2
+    - condition: api-artifacts-exporter.enabled
+      name: api-artifacts-exporter
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.2
+    - condition: ncm-custom-metrics.enabled
+      name: ncm-custom-metrics
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.39
+    description: An Umbrella Helm chart representing the Intelligent Operation Platform
+    digest: e6015e7ce20a8229ca4f3ea8558cdec541344bf6bab5dc13b519a4a3db186ca7
+    keywords:
+    - aiops-base
+    - dashboards
+    - vulcan
+    - reports
+    - neuron
+    - uda
+    - sizer
+    - ncm-platform-objects-lite-sa-buckets
+    - aiops-cpaas-common-utilities-role
+    - ncm-custom-metrics
+    - api-artifacts-volume
+    - api-artifacts-exporter
+    name: aiops
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/aiops-2.1.107.tgz
+    version: 2.1.107
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-08-10T19:35:50.588549627Z"
     dependencies:
     - alias: aiops-cpaas-common-utilities-role
@@ -733,7 +808,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-10T19:35:50.61701153Z"
+    created: "2026-08-11T18:09:47.797559189Z"
     dependencies:
     - alias: cg-cpaas-common-utilities-role
       condition: cg-cpaas-common-utilities-role.enabled
@@ -863,13 +938,13 @@ entries:
       version: 2.1.2
     description: An umbrella Helm chart for deployment of Cost Governance on-premises
       components
-    digest: 487c482a2414569d5b71134001ae8f37066cb9c2c0222a370758ae390245cbfc
+    digest: 9f401731605ca970941fbfb742af655c20f651bb96d7007933b45c429495e96c
     keywords:
     - cg-onprem
     name: cg-umbrella-chart
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/cg-umbrella-chart-2.1.52.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/cg-umbrella-chart-2.1.52.tgz
     version: 2.1.52
   - annotations:
       appType: Application
@@ -1159,7 +1234,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-10T19:35:50.782454949Z"
+    created: "2026-08-11T18:09:47.931669788Z"
     dependencies:
     - alias: ncm-platform-data-namespace
       condition: ncm-platform-data-namespace.enabled
@@ -1293,7 +1368,7 @@ entries:
     name: cg-umbrella-chart
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/cg-umbrella-chart/cg-umbrella-chart-1.0.0.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/cg-umbrella-chart/cg-umbrella-chart-1.0.0.tgz
     version: 1.0.0
   chakr-db-ext4:
   - annotations:
@@ -2730,6 +2805,53 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.0_Release_Final/domain-manager-2.0.220.tgz
     version: 2.0.220
   domain-manager-umbrella:
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2026-08-11T18:09:47.802533141Z"
+    dependencies:
+    - condition: ncm-namespaces.enabled
+      name: ncm-namespaces
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.1.83
+    - condition: zookeeper.enabled
+      name: zookeeper
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 0.0.9
+    - condition: chakr-db-ext4.enabled
+      name: chakr-db-ext4
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 1.0.4
+    - condition: insights-server-chakr.enabled
+      name: insights-server-chakr
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.0.1
+    - condition: domain-manager.enabled
+      name: domain-manager
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.139
+    - condition: projects.enabled
+      name: projects
+      repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
+      version: 2.1.26
+    description: An Umbrella Helm representing domain manager
+    digest: c1806e5bb9e5dad7bfb5d544cdfb9a143e4f80dde778e29c83e3a183f76d893e
+    keywords:
+    - zookeeper
+    - chakr-db-ext4
+    - insights-server-chakr
+    - domain-manager
+    - projects-beluga
+    - projects
+    maintainers:
+    - email: aman.kumar@nutanix.com
+      name: Aman Kumar
+    name: domain-manager-umbrella
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/domain-manager-umbrella-2.1.103.tgz
+    version: 2.1.103
   - annotations:
       appType: Application
     apiVersion: v2
@@ -7115,7 +7237,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-10T19:35:50.672784548Z"
+    created: "2026-08-11T18:09:47.815526245Z"
     dependencies:
     - condition: ncm-common-base.enabled
       name: ncm-common-base
@@ -7155,7 +7277,7 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 0.1.1
     description: An Umbrella Helm chart representing the NCM base charts
-    digest: 0c9ad970f2fe4502dcaa2cc2b45cc8072cd9ecef29d8871fbb87959461a496d6
+    digest: d58dfc920503c38b349805fd84db22aa1447acf0310c6d15316f86fa1dd87e4d
     keywords:
     - ncm-common-namespace
     - ncm-datastore-namespace
@@ -7167,7 +7289,7 @@ entries:
     name: ncm-base
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/ncm-base-2.1.178.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/ncm-base-2.1.178.tgz
     version: 2.1.178
   - annotations:
       appType: Application
@@ -7669,7 +7791,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-10T19:35:50.710348542Z"
+    created: "2026-08-11T18:09:47.856558329Z"
     dependencies:
     - condition: ikat.enabled
       name: ikat
@@ -7889,7 +8011,7 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 1.0.3
     description: An Umbrella Helm chart representing the NCM Common Platform
-    digest: 97fd5e6b440ce18d4f7dff48843d4453ccc50dd51e431e56a6f95a810659e81a
+    digest: 7f43ef29ad004b17ff87777b610b4665b32bb17890f63b4e13e2112ff0349812
     keywords:
     - ikat
     - adonis
@@ -7944,7 +8066,7 @@ entries:
     name: ncm-common
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/ncm-common-2.1.292.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/ncm-common-2.1.292.tgz
     version: 2.1.292
   - annotations:
       appType: Application
@@ -9575,7 +9697,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-10T19:35:50.715825841Z"
+    created: "2026-08-11T18:09:47.894449466Z"
     dependencies:
     - alias: cpaas-common-utilities-role-ss
       condition: cpaas-common-utilities-role-ss.enabled
@@ -9612,7 +9734,7 @@ entries:
       repository: https://artifactory.dyn.ntnxdpro.com:443/artifactory/canaveral-helm/
       version: 2.1.8
     description: An Umbrella Helm chart representing the NCM Self Service Platform
-    digest: af4f276827c87e670495412be4d56dc92e5bbea334636b33835edc35bb16ac3b
+    digest: 8b704bd1ee4f3da1667f1364d62229dea342f886fa10568436c944fe743a63e2
     keywords:
     - ncm-calm
     - ncm-policy
@@ -9629,7 +9751,7 @@ entries:
     name: ncm-self-service
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/ncm-self-service-2.1.136.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/ncm-self-service-2.1.136.tgz
     version: 2.1.136
   - annotations:
       appType: Application
@@ -13371,13 +13493,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-08-10T19:35:50.716823204Z"
+    created: "2026-08-11T18:09:47.895861241Z"
     description: A Helm chart for Kubernetes
-    digest: de0db5b85c4238afdebf44aed70b9eba75aab870dc3217ad30e52821883d87bc
+    digest: c1da2e99353fd632584cc8df3c7b312f8c04155223bd2c2549840938b8182826
     name: nutanix-infra-data-receiver
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/nutanix-infra-data-receiver-2.1.23.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/nutanix-infra-data-receiver-2.1.23.tgz
     version: 2.1.23
   - annotations:
       appType: Service
@@ -17036,14 +17158,14 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-10T19:35:50.717039727Z"
+    created: "2026-08-11T18:09:47.896110699Z"
     description: A Helm chart for creation of base constructs needed for registration
       on PC.
-    digest: bffb135be42dce2554040d4483f11871f00a2d4dc45534e716575c59cb3c8a20
+    digest: b7137c5d66473cf0827ceeb9b597d052c2d65ba3104448b2a60e69d333895cb7
     name: pc-registration-base
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/pc-registration-base-2.1.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/pc-registration-base-2.1.1.tgz
     version: 2.1.1
   - annotations:
       appType: Service
@@ -17063,13 +17185,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-10T19:35:50.717503644Z"
+    created: "2026-08-11T18:09:47.896626835Z"
     description: A Helm chart for node proxy configuration on PC.
-    digest: 46fd6e9b8a4fad008c16dc9cc1f836e0113df25716964f99ca5cead00a3ef7a1
+    digest: 60fb90e290b67f3814c347af959101431843b8dd68d0fa83eb47dcc03a93ee27
     name: pc-registration-config
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/pc-registration-config-2.1.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/pc-registration-config-2.1.1.tgz
     version: 2.1.1
   - annotations:
       appType: Service
@@ -17277,13 +17399,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-10T19:35:50.718061804Z"
+    created: "2026-08-11T18:09:47.898413195Z"
     description: A Helm chart for node proxy configuration on S-MSP
-    digest: b812092a9dc6ae4fc898a3789dea79f0f5bb6e9e45417453d61ad3fa88f228c8
+    digest: 651c43cc268edffc7d595878e700773ee0ce5c6cb27c18c1ab5336555d10d2ee
     name: smsp-registration-config
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/smsp-registration-config-2.1.2.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/smsp-registration-config-2.1.2.tgz
     version: 2.1.2
   - annotations:
       appType: Service
@@ -17314,13 +17436,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 0.0.1
-    created: "2026-08-10T19:35:50.719693792Z"
+    created: "2026-08-11T18:09:47.899307269Z"
     description: A Helm chart for aiops sqlserver collector
-    digest: 7646f05e7976cb8deec767dfc85dbf9b44a0d1b4903704b8ec461028175d2461
+    digest: b912f1970f4ed06453f1a47beeefaea44844d9d1c4c5822791becbbf4cf9fbb5
     name: sqlserver
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/sqlserver-2.1.2.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/sqlserver-2.1.2.tgz
     version: 2.1.2
   - annotations:
       appType: Service
@@ -17428,13 +17550,13 @@ entries:
       appType: Service
     apiVersion: v2
     appVersion: 0.0.1
-    created: "2026-08-10T19:35:50.720498657Z"
+    created: "2026-08-11T18:09:47.900200072Z"
     description: A Helm chart for aiops vcenter collector
-    digest: 355138e32bad00c75ffff80309a6451fc3d57c1324b0fc3205269c44d0baeff1
+    digest: a2af2e73634d4f41a6c92e45c50a37e1e3e01da1b0514932b4b974d494b682c8
     name: vcenter
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.306_Charts/vcenter-2.1.2.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NCM_2.1.0_Charts/vcenter-2.1.2.tgz
     version: 2.1.2
   - annotations:
       appType: Service
@@ -17583,4 +17705,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-10T19:35:50.580870524Z"
+generated: "2026-08-11T18:09:47.733323866Z"
