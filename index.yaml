@@ -6497,6 +6497,29 @@ entries:
   nai-core:
   - apiVersion: v2
     appVersion: 0.1.0
+    created: "2026-08-20T04:14:44.108341614Z"
+    dependencies:
+    - name: oauth2-proxy
+      repository: ""
+      version: 7.12.17
+    - name: nai-clickhouse-keeper
+      repository: ""
+      version: 2.0.0
+    - name: nai-clickhouse-server
+      repository: ""
+      version: 2.0.0
+    - name: nai-clickhouse-schemas
+      repository: ""
+      version: 2.1.4
+    description: A Helm chart for NAI core components
+    digest: a71f92e3bacee70e0215dc2e3965d93aabb5c06838e0ded7b3fd8885fcd463e5
+    name: nai-core
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NAI-2.8-GA-Helm-Charts/nai-core-2.8.0.tgz
+    version: 2.8.0
+  - apiVersion: v2
+    appVersion: 0.1.0
     created: "2026-08-13T22:13:48.495503455Z"
     dependencies:
     - name: oauth2-proxy
@@ -6680,6 +6703,29 @@ entries:
     - https://github.com/nutanix-scratch/helm/releases/download/nai-2.5.0-v2/nai-core-2.5.0-rc0.tgz
     version: 2.5.0-rc0
   nai-operators:
+  - apiVersion: v2
+    appVersion: 0.1.0
+    created: "2026-08-20T04:14:44.131832066Z"
+    dependencies:
+    - name: nai-clickhouse-crd
+      repository: ""
+      version: 1.1.0
+    - name: nai-clickhouse-operator
+      repository: ""
+      version: 1.2.0
+    - name: ai-gateway-crds-helm
+      repository: ""
+      version: v1.0.0
+    - name: ai-gateway-helm
+      repository: ""
+      version: v1.0.0
+    description: A Helm chart for CRDs and Operators required by NAI Core
+    digest: 90f5f0f1ed7313bae62bd691b50f9dc841e190a2beaeccc51f13d4a429800321
+    name: nai-operators
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NAI-2.8-GA-Helm-Charts/nai-operators-2.8.0.tgz
+    version: 2.8.0
   - apiVersion: v2
     appVersion: 0.1.0
     created: "2026-08-13T22:13:48.547141772Z"
@@ -18049,4 +18095,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-19T21:43:32.03379776Z"
+generated: "2026-08-20T04:14:44.060540274Z"
