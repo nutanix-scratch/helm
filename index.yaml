@@ -13912,14 +13912,25 @@ entries:
   nutanix-labs-hello-world:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-08-26T12:41:40.489650466Z"
+    created: "2026-08-26T13:37:02.370599733Z"
     description: A Helm chart for Kubernetes
-    digest: 59a888010005566aec17bad134da4db19429daa16c49e4d0fb7d4b93659a7339
+    digest: 6e45d16e444b7c1f7ac62ed1e78254ae4fb3842d672d778f4e4753aef0ba31b2
     name: nutanix-labs-hello-world
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/helm-phx-stag1/nutanix-labs-hello-world-2.1.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/helm-aws-multiple-entry/nutanix-labs-hello-world-2.1.1.tgz
     version: 2.1.1
+  nutanix-labs-hello-world-stage:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-08-26T13:37:02.371164339Z"
+    description: A Helm chart for Kubernetes
+    digest: a054bac42f7bd5db0f29c3a8de893e9c9000ebe59b343827e19125b8df821416
+    name: nutanix-labs-hello-world-stage
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/helm-aws-multiple-entry/nutanix-labs-hello-world-stage-2.1.0.tgz
+    version: 2.1.0
   nx-cg-data-loader:
   - annotations:
       appType: Service
@@ -18143,4 +18154,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-26T12:41:40.489015758Z"
+generated: "2026-08-26T13:37:02.369495869Z"
