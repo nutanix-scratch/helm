@@ -13909,6 +13909,17 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/ndk-k8s-agent-rc-4/nutanix-k8s-agent-1.0.406.tgz
     version: 1.0.406
+  nutanix-labs-hello-world:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2026-08-26T12:41:40.489650466Z"
+    description: A Helm chart for Kubernetes
+    digest: 59a888010005566aec17bad134da4db19429daa16c49e4d0fb7d4b93659a7339
+    name: nutanix-labs-hello-world
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/helm-phx-stag1/nutanix-labs-hello-world-2.1.1.tgz
+    version: 2.1.1
   nx-cg-data-loader:
   - annotations:
       appType: Service
@@ -18132,4 +18143,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-20T09:33:26.8723764Z"
+generated: "2026-08-26T12:41:40.489015758Z"
