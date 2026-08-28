@@ -13912,13 +13912,13 @@ entries:
   nutanix-labs-hello-world:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2026-08-28T16:29:19.062389276Z"
+    created: "2026-08-28T16:34:09.07948312Z"
     description: A Helm chart for Kubernetes
-    digest: f247a245913325c5540ba576e98a3cc1742791f284d6ae312bc74a481aef5b3d
+    digest: 0d0d520a85d90ab6a858a6d604071e8dcee878fa93a2353353559e5a482c5ba2
     name: nutanix-labs-hello-world
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-labs-hello-world-2.1.1/nutanix-labs-hello-world-2.1.1.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-labs-hello-world-2.1.1-phx-test/nutanix-labs-hello-world-2.1.1.tgz
     version: 2.1.1
   nutanix-labs-hello-world-stage:
   - apiVersion: v2
@@ -18154,4 +18154,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-08-28T16:29:19.06176324Z"
+generated: "2026-08-28T16:34:09.078820553Z"
