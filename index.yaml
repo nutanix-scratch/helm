@@ -7098,7 +7098,7 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
-    created: "2026-08-04T04:42:06.919071184Z"
+    created: "2026-09-08T05:18:50.784481812Z"
     dependencies:
     - alias: create-namespace
       condition: create-namespace.enabled
@@ -7122,7 +7122,7 @@ entries:
       repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
       version: 0.19.4
     description: An Umbrella Helm chart for CPaaS components
-    digest: 65ad976e3aed526329822deb56a4e9a07c2685dcda165f9870a6f91dd97b5955
+    digest: d23d96d72a2b8b850293de566730a1555b75eb98d0efa669a6d9661cfc1e841f
     keywords:
     - metallb
     - cpaas-istio
@@ -7132,7 +7132,7 @@ entries:
     name: nc-cpaas
     type: application
     urls:
-    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.2_Release_Charts_Final/nc-cpaas-1.0.9.tgz
+    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.3_Release_Charts_v2/nc-cpaas-1.0.9.tgz
     version: 1.0.9
   - annotations:
       appType: Application
@@ -12684,6 +12684,82 @@ entries:
       appType: Application
     apiVersion: v2
     appVersion: 1.0.0
+    created: "2026-09-08T05:18:50.811476439Z"
+    dependencies:
+    - alias: create-namespace
+      condition: create-namespace.enabled
+      name: nc-onprem-create-namespace
+      repository: file://../create-namespace
+      version: 1.0.0
+    - alias: cpaas-common-utilities-role-nc
+      condition: cpaas-common-utilities-role-nc.enabled
+      name: cpaas-common-utilities-role
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.0
+    - alias: cpaas-common-utilities-job-nc
+      condition: cpaas-common-utilities-job-nc.enabled
+      name: cpaas-common-utilities-job
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.1.4
+    - condition: nc-redis-cluster.enabled
+      name: nc-redis-cluster
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 8.6.13
+    - condition: nc-cloudnative-pg-cluster.enabled
+      name: nc-cloudnative-pg-cluster
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 1.0.4
+    - alias: iamv2
+      condition: iamv2.enabled
+      name: nc-onprem-iamv2
+      repository: file://../iamv2
+      version: 1.0.2
+    - alias: nc-jobs
+      condition: nc-jobs.enabled
+      name: nc-onprem-jobs
+      repository: file://../nc-jobs
+      version: 1.0.0
+    - alias: secretstore-gen-job
+      condition: secretstore-gen-job.enabled
+      name: nc-onprem-jobs
+      repository: file://../nc-jobs
+      version: 1.0.0
+    - alias: ikathub
+      condition: ikathub.enabled
+      name: nc-onprem-ikathub
+      repository: file://../ikathub
+      version: 1.0.1
+    - alias: nc-services
+      condition: nc-services.enabled
+      name: nc-onprem
+      repository: file://../nc-services
+      version: 1.0.0
+    - condition: cpaas-nats-helm.enabled
+      name: cpaas-nats-helm
+      repository: https://artifactory.canaveral-corp.us-west-2.aws:443/artifactory/canaveral-helm
+      version: 0.3.9
+    - condition: nc-backup.enabled
+      name: nc-backup
+      repository: file://../nc-backup
+      version: 1.0.0
+    description: An umbrella Helm chart for deployment of Nutanix Central on-premises
+      components
+    digest: b5a5443163d9464069a04bd38d65a436d7e7fcc19c758b268f250ba87da9e671
+    keywords:
+    - nc-onprem-iamv2
+    - nc-onprem-jobs
+    - nc-onprem-ikathub
+    - nc-onprem
+    - cpaas-nats-helm
+    name: nutanix-central
+    type: application
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/NC_2.0.3_Release_Charts_v2/nutanix-central-2.0.3.tgz
+    version: 2.0.3
+  - annotations:
+      appType: Application
+    apiVersion: v2
+    appVersion: 1.0.0
     created: "2026-08-04T04:42:06.945262695Z"
     dependencies:
     - alias: create-namespace
@@ -18173,4 +18249,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-09-04T10:31:05.143245004Z"
+generated: "2026-09-08T05:18:50.743457276Z"
