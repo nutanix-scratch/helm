@@ -13370,6 +13370,23 @@ entries:
   - annotations:
       appType: Application
     apiVersion: v2
+    created: "2026-10-23T07:10:22.941676934Z"
+    dependencies:
+    - condition: nutanix-infrastructure-manager.enabled
+      name: nutanix-infrastructure-manager
+      repository: https://artifactory.corp.p10y.ntnxdpro.com/artifactory/canaveral-helm
+      version: 7.6.1
+    description: An Umbrella Helm chart representing the NIM Application
+    digest: ee98b5010a8cd8c22c7d1da4492f1dd4ee6fb5ae50948f7363b2fbad1f66886c
+    keywords:
+    - nutanix-infrastructure-manager
+    name: nutanix-core-pc-nim-umbrella
+    urls:
+    - https://github.com/nutanix-scratch/helm/releases/download/nutanix-core-pc-nim-umbrella-7.6.1-756af40b4d598a92ab291429c35d46201c4a522285068b107487d3cf3d5671/nutanix-core-pc-nim-umbrella-7.6.1.tgz
+    version: 7.6.1
+  - annotations:
+      appType: Application
+    apiVersion: v2
     created: "2026-06-18T07:11:56.24262141Z"
     dependencies:
     - condition: nutanix-infrastructure-manager.enabled
@@ -19003,4 +19020,4 @@ entries:
     urls:
     - https://github.com/nutanix-scratch/helm/releases/download/NCM_1.5_Release_RC3_Final_All_Charts/zookeeper-0.0.6.tgz
     version: 0.0.6
-generated: "2026-10-21T19:16:29.425665997Z"
+generated: "2026-10-23T07:10:22.940316408Z"
